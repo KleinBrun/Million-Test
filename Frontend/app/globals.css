@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f9f9f9;
+	background-image: url('https://www.transparenttextures.com/patterns/circles.png');
+	background-repeat: repeat;
+	background-size: auto;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Playfair Display', serif;
+}
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('https://www.transparenttextures.com/patterns/diagmonds.png') repeat;
+	opacity: 0.05; /* Muy sutil */
+	pointer-events: none;
+	z-index: 0;
+}
+
+@keyframes shimmer {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.animate-shimmer {
+	animation: shimmer 1s infinite linear;
+	background-size: 200% 100%;
+}
