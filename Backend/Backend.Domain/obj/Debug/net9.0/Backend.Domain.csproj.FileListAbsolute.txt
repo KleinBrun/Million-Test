@@ -1,0 +1,12 @@
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\bin\Debug\net9.0\Backend.Domain.deps.json
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\bin\Debug\net9.0\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\bin\Debug\net9.0\Backend.Domain.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.AssemblyInfoInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.AssemblyInfo.cs
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.csproj.CoreCompileInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\refint\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\ref\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.csproj.AssemblyReference.cache

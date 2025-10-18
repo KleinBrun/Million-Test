@@ -1,0 +1,17 @@
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Application.deps.json
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Application.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Application.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Infrastructure.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Domain.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\bin\Debug\net9.0\Backend.Infrastructure.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.csproj.AssemblyReference.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.AssemblyInfoInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.AssemblyInfo.cs
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.csproj.CoreCompileInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend..65AE5655.Up2Date
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\refint\Backend.Application.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\Backend.Application.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Application\obj\Debug\net9.0\ref\Backend.Application.dll

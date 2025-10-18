@@ -1,0 +1,15 @@
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.AssemblyInfoInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.AssemblyInfo.cs
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.csproj.AssemblyReference.cache
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\bin\Debug\net9.0\Backend.Infrastructure.deps.json
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\bin\Debug\net9.0\Backend.Infrastructure.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\bin\Debug\net9.0\Backend.Infrastructure.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\bin\Debug\net9.0\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\bin\Debug\net9.0\Backend.Domain.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend..20A4AD1D.Up2Date
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\refint\Backend.Infrastructure.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\Backend.Infrastructure.pdb
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Infrastructure\obj\Debug\net9.0\ref\Backend.Infrastructure.dll
