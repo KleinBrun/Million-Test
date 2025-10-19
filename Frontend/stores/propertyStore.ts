@@ -1,43 +1,57 @@
-'use client';
-
 import { create } from 'zustand';
-import { persist, createJSONStorage } from 'zustand/middleware';
+import { persist } from 'zustand/middleware';
 import { Property } from '@/types/property';
 
-type State = {
-    byId: Record<string, Property>;
-    // acciones
-    setOne: (p: Property) => void;
+interface PropertyState {
+    properties: Property[];
+    setMany: (props: Property[]) => void;
     getOne: (id: string) => Property | undefined;
-    setMany: (list: Property[]) => void;
-    clear: () => void;
-    // hidratación de persistencia
-    rehydrated: boolean;
-    setRehydrated: (v: boolean) => void;
-};
+    setOne: (prop: Property) => void;
 
-export const usePropertyStore = create<State>()(
+    filters: {
+        name: string;
+        address: string;
+        minPrice: string;
+        maxPrice: string;
+        currentPage: number;
+    };
+    setFilters: (filters: Partial<PropertyState['filters']>) => void;
+
+    rehydrated: boolean;
+}
+
+export const usePropertyStore = create<PropertyState>()(
     persist(
         (set, get) => ({
-            byId: {},
-            setOne: (p) => set((s) => ({ byId: { ...s.byId, [p.id]: p } })),
-            getOne: (id) => get().byId[id],
-            setMany: (list) =>
-                set((s) => ({
-                    byId: { ...s.byId, ...Object.fromEntries(list.map((p) => [p.id, p])) },
+            properties: [],
+            setMany: (props) => set({ properties: props }),
+            getOne: (id) => get().properties.find((p) => p.idProperty === id),
+            setOne: (prop) =>
+                set((state) => ({
+                    properties: [
+                        ...state.properties.filter((p) => p.idProperty !== prop.idProperty),
+                        prop,
+                    ],
                 })),
-            clear: () => set({ byId: {} }),
+
+            filters: {
+                name: '',
+                address: '',
+                minPrice: '',
+                maxPrice: '',
+                currentPage: 1,
+            },
+            setFilters: (filters) =>
+                set((state) => ({
+                    filters: { ...state.filters, ...filters },
+                })),
+
             rehydrated: false,
-            setRehydrated: (v) => set({ rehydrated: v }),
         }),
         {
-            name: 'property-cache-v1', // clave en localStorage
-            storage: createJSONStorage(() => localStorage),
-            // Solo persistimos el mapa (no funciones ni flags)
-            partialize: (s) => ({ byId: s.byId }),
-            // Marca cuando terminó de rehidratar
-            onRehydrateStorage: () => (state, error) => {
-                if (!error) state?.setRehydrated(true);
+            name: 'property-store',
+            onRehydrateStorage: () => (state) => {
+                if (state) state.rehydrated = true;
             },
         }
     )

@@ -1,0 +1,242 @@
+[
+  {
+    "_id": {
+      "$oid": "30877432d1026706d7e805da"
+    },
+    "idProperty": "30877432d1026706d7e805da",
+    "Name": "Loft Urbano El Encanto",
+    "Address": "Cll 20 # 28-44, Barranquilla",
+    "Price": 1250000000,
+    "CodeInternal": "PROP100",
+    "Year": 2011,
+    "IdOwner": "67200003f1a2c1a7b8000003"
+  },
+  {
+    "_id": {
+      "$oid": "9611a11f5125227c3712da86"
+    },
+    "idProperty": "9611a11f5125227c3712da86",
+    "Name": "Casa Moderna del Lago Bosque Alto",
+    "Address": "Cra 31 # 34-51, Bucaramanga",
+    "Price": 1450000000,
+    "CodeInternal": "PROP101",
+    "Year": 2018,
+    "IdOwner": "67200001f1a2c1a7b8000001"
+  },
+  {
+    "_id": {
+      "$oid": "cfc7403d75e173e4eaede5fe"
+    },
+    "idProperty": "cfc7403d75e173e4eaede5fe",
+    "Name": "Dúplex Alto Monteverde",
+    "Address": "Cll 97 # 32-82, Barranquilla",
+    "Price": 1520000000,
+    "CodeInternal": "PROP102",
+    "Year": 2015,
+    "IdOwner": "67200003f1a2c1a7b8000003"
+  },
+  {
+    "_id": {
+      "$oid": "bdabe898736a3566f893697b"
+    },
+    "idProperty": "bdabe898736a3566f893697b",
+    "Name": "Casa Moderna del Lago Mirador 360",
+    "Address": "Av. 39 Norte #2-69, Cali",
+    "Price": 390000000,
+    "CodeInternal": "PROP103",
+    "Year": 2009,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "4a3e3e04d42f8ac2acaf1279"
+    },
+    "idProperty": "4a3e3e04d42f8ac2acaf1279",
+    "Name": "Loft Urbano Las Lomas",
+    "Address": "Cra 96 # 12-56, Bocagrande, Cartagena",
+    "Price": 1410000000,
+    "CodeInternal": "PROP104",
+    "Year": 2013,
+    "IdOwner": "67200003f1a2c1a7b8000003"
+  },
+  {
+    "_id": {
+      "$oid": "7a05814d32feb3e719e01fcd"
+    },
+    "idProperty": "7a05814d32feb3e719e01fcd",
+    "Name": "Finca Las Palmas Santa Bárbara",
+    "Address": "Carrera 63 # 57-10, Medellín",
+    "Price": 650000000,
+    "CodeInternal": "PROP105",
+    "Year": 2010,
+    "IdOwner": "67200002f1a2c1a7b8000002"
+  },
+  {
+    "_id": {
+      "$oid": "b29ee11b922ce1e6af41e3a2"
+    },
+    "idProperty": "b29ee11b922ce1e6af41e3a2",
+    "Name": "Apartamento Panorámico Alameda",
+    "Address": "Calle 83 # 23-6, Armenia",
+    "Price": 1400000000,
+    "CodeInternal": "PROP106",
+    "Year": 2024,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "69b1a83bdceca5ffb82d2d59"
+    },
+    "idProperty": "69b1a83bdceca5ffb82d2d59",
+    "Name": "Apartamento Boutique Bosque Alto",
+    "Address": "Cra 14 # 11-42, Bucaramanga",
+    "Price": 1420000000,
+    "CodeInternal": "PROP107",
+    "Year": 2021,
+    "IdOwner": "67200002f1a2c1a7b8000002"
+  },
+  {
+    "_id": {
+      "$oid": "d48bcb1c16b92ce8343cbab4"
+    },
+    "idProperty": "d48bcb1c16b92ce8343cbab4",
+    "Name": "Casa del Bosque San Miguel",
+    "Address": "Cra 78 # 66-52, Bocagrande, Cartagena",
+    "Price": 390000000,
+    "CodeInternal": "PROP108",
+    "Year": 2009,
+    "IdOwner": "67200002f1a2c1a7b8000002"
+  },
+  {
+    "_id": {
+      "$oid": "bdf672eb231645ae36f2e1e4"
+    },
+    "idProperty": "bdf672eb231645ae36f2e1e4",
+    "Name": "Apartamento Central Vista Azul",
+    "Address": "Calle 54 # 59-73, Armenia",
+    "Price": 1460000000,
+    "CodeInternal": "PROP109",
+    "Year": 2017,
+    "IdOwner": "67200001f1a2c1a7b8000001"
+  },
+  {
+    "_id": {
+      "$oid": "ffe5b54f511210d472406eb1"
+    },
+    "idProperty": "ffe5b54f511210d472406eb1",
+    "Name": "Apartamento Parque El Retiro",
+    "Address": "Cra 82 # 86-79, Manizales",
+    "Price": 320000000,
+    "CodeInternal": "PROP110",
+    "Year": 2008,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "4dc2efcd1b237b51cad30387"
+    },
+    "idProperty": "4dc2efcd1b237b51cad30387",
+    "Name": "Casa Vista Verde Portal Real",
+    "Address": "Calle 96 # 67-72, Armenia",
+    "Price": 840000000,
+    "CodeInternal": "PROP111",
+    "Year": 2022,
+    "IdOwner": "67200003f1a2c1a7b8000003"
+  },
+  {
+    "_id": {
+      "$oid": "34d184474a7cf48dce22c8be"
+    },
+    "idProperty": "34d184474a7cf48dce22c8be",
+    "Name": "Finca Las Palmas Alameda",
+    "Address": "Carrera 42 # 75-1, Rodadero, Santa Marta",
+    "Price": 1190000000,
+    "CodeInternal": "PROP112",
+    "Year": 2010,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "bc451d7a7da82b31571c2e99"
+    },
+    "idProperty": "bc451d7a7da82b31571c2e99",
+    "Name": "Casa Campestre La Cumbre",
+    "Address": "Cra 12 # 71-59, Bucaramanga",
+    "Price": 790000000,
+    "CodeInternal": "PROP113",
+    "Year": 2017,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "81fb75377817cb557ab0b46f"
+    },
+    "idProperty": "81fb75377817cb557ab0b46f",
+    "Name": "Apartamento Central El Encanto",
+    "Address": "Calle 40 # 23-63, Armenia",
+    "Price": 420000000,
+    "CodeInternal": "PROP114",
+    "Year": 2015,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "df7f92c143e556641d2d648a"
+    },
+    "idProperty": "df7f92c143e556641d2d648a",
+    "Name": "Villa Andina Vista Azul",
+    "Address": "Carrera 12 # 50-72, Medellín",
+    "Price": 1110000000,
+    "CodeInternal": "PROP115",
+    "Year": 2016,
+    "IdOwner": "67200005f1a2c1a7b8000005"
+  },
+  {
+    "_id": {
+      "$oid": "446ade4a52fa5a10e8655f24"
+    },
+    "idProperty": "446ade4a52fa5a10e8655f24",
+    "Name": "Villa Andina del Prado",
+    "Address": "Cra 56 # 82-55, Manizales",
+    "Price": 1500000000,
+    "CodeInternal": "PROP116",
+    "Year": 2020,
+    "IdOwner": "67200001f1a2c1a7b8000001"
+  },
+  {
+    "_id": {
+      "$oid": "c4105ff52fa7a817cc72eee2"
+    },
+    "idProperty": "c4105ff52fa7a817cc72eee2",
+    "Name": "Apartamento Parque Los Robles",
+    "Address": "Carrera 58 # 41-16, Rodadero, Santa Marta",
+    "Price": 540000000,
+    "CodeInternal": "PROP117",
+    "Year": 2020,
+    "IdOwner": "67200004f1a2c1a7b8000004"
+  },
+  {
+    "_id": {
+      "$oid": "6aab96f03be771ac3c890bef"
+    },
+    "idProperty": "6aab96f03be771ac3c890bef",
+    "Name": "Casa de Campo Monteverde",
+    "Address": "Calle 38 # 84-25, Bogotá",
+    "Price": 490000000,
+    "CodeInternal": "PROP118",
+    "Year": 2011,
+    "IdOwner": "67200002f1a2c1a7b8000002"
+  },
+  {
+    "_id": {
+      "$oid": "bbff04e57286455b37da3fff"
+    },
+    "idProperty": "bbff04e57286455b37da3fff",
+    "Name": "Casa Jardines Los Robles",
+    "Address": "Cra 76 # 21-83, Bocagrande, Cartagena",
+    "Price": 900000000,
+    "CodeInternal": "PROP119",
+    "Year": 2009,
+    "IdOwner": "67200002f1a2c1a7b8000002"
+  }
+]

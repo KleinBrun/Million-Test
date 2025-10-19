@@ -1,10 +1,12 @@
 using Backend.Application.Dtos;
-using System.Collections.Generic;
 
 namespace Backend.Application.Interfaces
 {
     public interface IPropertyService
     {
-        List<PropertyDto> GetProperties(string? name, string? address, double? minPrice, double? maxPrice);
+        (List<PropertyFullDto> Data, long TotalCount) GetAllWithRelations(string? name, string? address, decimal? minPrice, decimal? maxPrice, int page, int pageSize);
+        PropertyFullDto? GetById(string id);
     }
 }
+
+

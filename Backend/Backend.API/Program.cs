@@ -1,54 +1,55 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
 using Backend.Application.Interfaces;
 using Backend.Application.Services;
 using Backend.Infrastructure.Repositories;
+using Microsoft.OpenApi.Models;
+using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// Registrar repositorio
-builder.Services.AddSingleton<PropertyRepository>();
-builder.Services.AddSingleton<IPropertyService, PropertyService>();
-
-// Servicios
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Backend API",
-        Version = "v1",
-        Description = "API de prueba para propiedades"
-    });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Backend API", Version = "v1" });
 });
 
-builder.Services.AddCors(options =>
+builder.Services.AddControllers();
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
-    {
-        policy.WithOrigins("http://localhost:3000") 
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
+    var cfg = sp.GetRequiredService<IConfiguration>();
+    var cs = cfg.GetConnectionString("Mongo")
+             ?? cfg["Mongo:ConnectionString"]
+             ?? "mongodb://localhost:27017";
+    return new MongoClient(cs);
 });
+
+builder.Services.AddCors(o =>
+{
+    o.AddPolicy("AllowFrontend", p => p
+        .WithOrigins("http://localhost:3000")
+        .AllowAnyHeader()
+        .AllowAnyMethod());
+});
+
+builder.Services.AddSingleton<PropertyRepository>();
+builder.Services.AddSingleton<OwnerRepository>();
+builder.Services.AddSingleton<PropertyImageRepository>();
+builder.Services.AddSingleton<PropertyTraceRepository>();
+builder.Services.AddScoped<IPropertyService, PropertyService>();
 
 var app = builder.Build();
 
 app.UseCors("AllowFrontend");
-// Middleware Swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Backend API v1");
-    c.RoutePrefix = string.Empty; // abre Swagger en http://localhost:5228/
+    c.RoutePrefix = string.Empty;
 });
 
-// HTTPS deshabilitado en desarrollo
-// app.UseHttpsRedirection();
+app.MapGet("/ping", () => Results.Ok(new { ok = true, time = DateTime.UtcNow }));
 
-app.UseAuthorization();
 app.MapControllers();
+
+Console.WriteLine("App escuchando en: " + string.Join(", ", app.Urls));
 app.Run();

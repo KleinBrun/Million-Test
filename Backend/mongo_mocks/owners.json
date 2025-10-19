@@ -1,0 +1,52 @@
+[
+  {
+    "_id": {
+      "$oid": "67200001f1a2c1a7b8000001"
+    },
+    "idOwner": "67200001f1a2c1a7b8000001",
+    "Name": "Carlos Pérez",
+    "Address": "Calle 12 #45-23, Bogotá",
+    "Photo": "https://randomuser.me/api/portraits/men/44.jpg",
+    "Birthday": "1985-04-15"
+  },
+  {
+    "_id": {
+      "$oid": "67200002f1a2c1a7b8000002"
+    },
+    "idOwner": "67200002f1a2c1a7b8000002",
+    "Name": "María López",
+    "Address": "Carrera 45 #10-25, Medellín",
+    "Photo": "https://randomuser.me/api/portraits/women/68.jpg",
+    "Birthday": "1990-11-20"
+  },
+  {
+    "_id": {
+      "$oid": "67200003f1a2c1a7b8000003"
+    },
+    "idOwner": "67200003f1a2c1a7b8000003",
+    "Name": "Andrés Martínez",
+    "Address": "Av. 6 Norte #25-31, Cali",
+    "Photo": "https://randomuser.me/api/portraits/men/33.jpg",
+    "Birthday": "1982-06-08"
+  },
+  {
+    "_id": {
+      "$oid": "67200004f1a2c1a7b8000004"
+    },
+    "idOwner": "67200004f1a2c1a7b8000004",
+    "Name": "Laura Gómez",
+    "Address": "Cra 9 #122-15, Bucaramanga",
+    "Photo": "https://randomuser.me/api/portraits/women/12.jpg",
+    "Birthday": "1989-03-14"
+  },
+  {
+    "_id": {
+      "$oid": "67200005f1a2c1a7b8000005"
+    },
+    "idOwner": "67200005f1a2c1a7b8000005",
+    "Name": "Sebastián Ramírez",
+    "Address": "Av. Oriental #65-32, Medellín",
+    "Photo": "https://randomuser.me/api/portraits/men/91.jpg",
+    "Birthday": "1993-09-10"
+  }
+]

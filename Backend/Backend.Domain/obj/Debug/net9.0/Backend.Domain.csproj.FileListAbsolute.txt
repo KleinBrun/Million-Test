@@ -23,3 +23,4 @@ C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.Domain\obj\Deb
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.Domain\obj\Debug\net9.0\refint\Backend.Domain.dll
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.pdb
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.Domain\obj\Debug\net9.0\ref\Backend.Domain.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.Domain\obj\Debug\net9.0\Backend.Domain.sourcelink.json
