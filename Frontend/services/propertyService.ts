@@ -17,11 +17,15 @@ export async function getProperties(filters?: Filters): Promise<Property[]> {
     const url = `http://localhost:5228/Properties?${params.toString()}`;
 
     const response = await fetch(url);
+    if (!response.ok) throw new Error(`Error al obtener propiedades: ${response.statusText}`);
+    return response.json();
+}
 
-    if (!response.ok) {
-        throw new Error(`Error al obtener propiedades: ${response.statusText}`);
-    }
-
-    const data: Property[] = await response.json();
-    return data;
+/** 🔹 Nueva función: obtener una propiedad por id */
+export async function getPropertyById(id: string): Promise<Property | null> {
+    const url = `http://localhost:5228/Properties/${id}`;
+    const response = await fetch(url);
+    if (response.status === 404) return null;
+    if (!response.ok) throw new Error(`Error al obtener propiedad: ${response.statusText}`);
+    return response.json();
 }

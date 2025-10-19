@@ -1061,6 +1061,48 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "Backend.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Backend.Domain": "1.0.0",
+          "Backend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Backend.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Backend.Application.dll": {}
+        }
+      },
+      "Backend.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MongoDB.Driver": "2.22.0"
+        },
+        "compile": {
+          "bin/placeholder/Backend.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Backend.Domain.dll": {}
+        }
+      },
+      "Backend.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Backend.Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.10",
+          "MongoDB.Driver": "3.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Backend.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Backend.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2866,10 +2908,26 @@
         "zstdsharp.port.0.7.3.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Backend.Application/1.0.0": {
+      "type": "project",
+      "path": "Backend.Application/Backend.Application.csproj",
+      "msbuildProject": "Backend.Application/Backend.Application.csproj"
+    },
+    "Backend.Domain/1.0.0": {
+      "type": "project",
+      "path": "Backend.Domain/Backend.Domain.csproj",
+      "msbuildProject": "Backend.Domain/Backend.Domain.csproj"
+    },
+    "Backend.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "Backend.Infrastructure/Backend.Infrastructure.csproj",
+      "msbuildProject": "Backend.Infrastructure/Backend.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Backend.Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.10",
       "Microsoft.Extensions.Configuration.Abstractions >= 9.0.10",
       "Microsoft.NET.Test.Sdk >= 18.0.0",
@@ -2885,11 +2943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.csproj",
+      "projectPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\ING_KLEIN_BRUN\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\obj\\",
+      "outputPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ING_KLEIN_BRUN\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2903,7 +2961,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Application\\Backend.Application.csproj": {
+              "projectPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Application\\Backend.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

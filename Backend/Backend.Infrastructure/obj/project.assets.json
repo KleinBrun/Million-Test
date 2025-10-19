@@ -715,11 +715,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Backend.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Infrastructure\\Backend.Infrastructure.csproj",
       "projectName": "Backend.Infrastructure",
-      "projectPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Backend.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Infrastructure\\Backend.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ING_KLEIN_BRUN\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ING_KLEIN_BRUN\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -734,8 +734,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\Backend.Domain.csproj": {
-              "projectPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\Backend.Domain.csproj"
+            "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Domain\\Backend.Domain.csproj": {
+              "projectPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Domain\\Backend.Domain.csproj"
             }
           }
         }

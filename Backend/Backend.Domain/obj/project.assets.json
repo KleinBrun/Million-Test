@@ -789,11 +789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\Backend.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Domain\\Backend.Domain.csproj",
       "projectName": "Backend.Domain",
-      "projectPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\Backend.Domain.csproj",
+      "projectPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Domain\\Backend.Domain.csproj",
       "packagesPath": "C:\\Users\\ING_KLEIN_BRUN\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\obj\\",
+      "outputPath": "C:\\Users\\ING_KLEIN_BRUN\\Documents\\Million\\Million\\Backend\\Backend.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ING_KLEIN_BRUN\\AppData\\Roaming\\NuGet\\NuGet.Config"
