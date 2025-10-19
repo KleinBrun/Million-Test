@@ -1,14 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { Property } from '@/types/property';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { usePropertyStore } from '@/stores/propertyStore';
-
-interface CardProps {
-    property: Property;
-}
+import { CardProps, Property } from '@/types';
 
 export default function PropertyCard({ property }: CardProps) {
     const router = useRouter();

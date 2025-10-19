@@ -1,9 +1,5 @@
-import { Property } from '../types/property';
+import { PropertyListProps } from '@/types';
 import PropertyCard from './PropertyCard';
-
-interface PropertyListProps {
-    properties: Property[];
-}
 
 export default function PropertyList({ properties }: PropertyListProps) {
     return (

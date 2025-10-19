@@ -4,6 +4,9 @@ import { ReactNode } from 'react';
 export const metadata = {
   title: 'Million',
   description: 'Frontend de propiedades',
+  icons: {
+    icon: '/images/icono.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -14,10 +17,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <header className="relative z-10 w-full bg-gradient-to-r from-slate-700 via-slate-600 to-slate-700 text-white shadow-lg py-5 border-b border-slate-400/30 backdrop-blur-md">
           <div className="container mx-auto px-6 flex items-center justify-between">
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-wide text-slate-100">
-              Million
+            <h1 className="font-[Allura] text-4xl text-white italic relative drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">
+              <span className="animate-[glow_2.5s_ease-in-out_infinite_alternate]">Million</span>
             </h1>
-            <span className="italic text-slate-300">Tu espacio ideal</span>
           </div>
         </header>
 
