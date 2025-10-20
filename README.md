@@ -62,7 +62,7 @@ cd Million
 NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api/Property
 ```
 
-#### 📍 Backend (`Backend.API/appsettings.json`)
+#### 📍 Backend (Navega a esta ruta `Backend.API/appsettings.json`)
 
 ```json
 {
