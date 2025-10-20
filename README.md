@@ -35,7 +35,7 @@ Ambos se ejecutan de forma integrada para listar, filtrar y visualizar propiedad
 
 ## ⚙️ Requisitos Previos
 
-Para ejecutar con Docker solo necesitas:
+Para ejecutar con Docker solo necesitas(solo necesarios para probar con la opcion 2):
 
 - **Docker** ≥ 24  
 - **Docker Compose Plugin** incluido
@@ -60,7 +60,6 @@ cd Million/docker
 ### 2️⃣ Levantar todos los servicios
 
 ```bash
-cd docker
 docker compose up -d --build
 ```
 
