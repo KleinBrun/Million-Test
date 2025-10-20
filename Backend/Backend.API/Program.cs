@@ -24,9 +24,13 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 builder.Services.AddCors(o =>
 {
     o.AddPolicy("AllowFrontend", p => p
-        .WithOrigins("http://localhost:3000")
+        .WithOrigins(
+            "http://localhost:3000",
+            "http://localhost:3001"  
+        )
         .AllowAnyHeader()
-        .AllowAnyMethod());
+        .AllowAnyMethod()
+        .AllowCredentials());
 });
 
 builder.Services.AddSingleton<PropertyRepository>();

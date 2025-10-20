@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+    mongodb:
+      build:
+        context: ..                     # ← la raíz del repo
+        dockerfile: docker/mongo/Dockerfile
+      container_name: million-mongodb
+      environment:
+        - MONGODB_ROOT_USER=root
+        - MONGODB_ROOT_PASSWORD=rootpass
+        - MONGODB_DATABASE=RealEstateDB
+      ports:
+        - "27017:27017"
+      volumes:
+        - mongo_data:/bitnami/mongodb
+
+    api:
+      build:
+        context: ..                       
+        dockerfile: docker/backend/Dockerfile
+      container_name: million-api
+      environment:
+        - ASPNETCORE_URLS=http://+:8080
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ConnectionStrings__Mongo=mongodb://root:rootpass@mongodb:27017/RealEstateDB?authSource=admin
+      ports:
+        - "5228:8080"
+      depends_on:
+        - mongodb
+
+    web:
+      build:
+        context: ..                       
+        dockerfile: docker/frontend/Dockerfile
+      container_name: million-web
+      environment:
+        - NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api/Property
+      ports:
+        - "3001:3000"                    
+      depends_on:
+        - api
+volumes:
+    mongo_data:

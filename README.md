@@ -41,7 +41,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 -   **Node.js** ≥ 18
 -   **pnpm** (recomendado) o npm/yarn
 -   **.NET SDK 9.0+**
--   **MongoDB** (local o en la nube con MongoDB Atlas con las collecciones correspondientes)
+-   **MongoDB** (local o en la nube con MongoDB Atlas)
 
 ---
 
@@ -136,9 +136,12 @@ dotnet test
 # Frontend
 cd Frontend
 pnpm test
-```
-
+```  
 ---
+
+## ❌ Manejo de Errores
+Se incluye la visualizacion en el front en los casos que no trae informacion el back(id no existente o fetch fallando). 
+
 
 ## 🌐 Endpoints Principales
 
