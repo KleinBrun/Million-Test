@@ -1,4 +1,4 @@
-# 🏡 Real Estate System – Backend & Frontend
+# 🏡 Million – Backend & Frontend
 
 ## 📦 Descripción General
 Sistema completo para la **gestión de propiedades inmobiliarias**, compuesto por:
@@ -6,7 +6,7 @@ Sistema completo para la **gestión de propiedades inmobiliarias**, compuesto po
 - **Backend API (.NET 9 + MongoDB)**
 - **Frontend Web (Next.js + Tailwind + Zustand)**
 
-Permite listar, filtrar y visualizar propiedades junto con sus propietarios, imágenes e historial de ventas.
+Permite listar, filtrar y visualizar propiedades junto con sus propietarios, imágenes e historial de ventas ( tiene algunas funcionalidades mockeadas para una mejor visualizacion ).
 
 ---
 
@@ -155,3 +155,5 @@ pnpm test
 - Node.js 18+  
 - .NET 9 SDK  
 - MongoDB (local o Atlas)
+
+**Desarrollado por Klein Brun**

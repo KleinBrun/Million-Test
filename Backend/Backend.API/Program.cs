@@ -17,7 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
     var cfg = sp.GetRequiredService<IConfiguration>();
-    var cs = cfg.GetConnectionString("Mongo") ?? cfg["Mongo:ConnectionString"] ?? "mongodb://localhost:27017";
+    var cs = cfg.GetConnectionString("Mongo") ?? cfg["Mongo:ConnectionString"];
     return new MongoClient(cs);
 });
 

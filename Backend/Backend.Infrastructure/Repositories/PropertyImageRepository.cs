@@ -10,8 +10,8 @@ namespace Backend.Infrastructure.Repositories
 
         public PropertyImageRepository(IMongoClient client, IConfiguration config)
         {
-            var db = client.GetDatabase(config["Mongo:Database"] ?? "RealEstateDb");
-            _collection = db.GetCollection<PropertyImage>(config["Mongo:Collections:PropertyImages"] ?? "PropertyImages");
+            var db = client.GetDatabase(config["Mongo:Database"]);
+            _collection = db.GetCollection<PropertyImage>(config["Mongo:Collections:PropertyImages"]);
         }
 
         public List<PropertyImage> GetByProperty(string idProperty) =>

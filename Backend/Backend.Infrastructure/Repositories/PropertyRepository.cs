@@ -11,8 +11,8 @@ namespace Backend.Infrastructure.Repositories
 
         public PropertyRepository(IMongoClient client, IConfiguration config)
         {
-            var db = client.GetDatabase(config["Mongo:Database"] ?? "RealEstateDb");
-            _collection = db.GetCollection<Property>(config["Mongo:Collections:Properties"] ?? "Properties");
+            var db = client.GetDatabase(config["Mongo:Database"]);
+            _collection = db.GetCollection<Property>(config["Mongo:Collections:Properties"]);
         }
 
         public (List<Property> Items, long TotalCount) GetFiltered(

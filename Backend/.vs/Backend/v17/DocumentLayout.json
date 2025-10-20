@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\propertytracerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\propertytracerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\propertyimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\propertyimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCF98B8E-8161-4241-BCC8-AE8E3F140EE7}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{D5A29D5F-9D4B-4229-9320-3906AC26603C}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\interfaces\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{024144A3-1454-44BA-B7D7-D24566E0E1A8}|Backend.Domain\\Backend.Domain.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{024144A3-1454-44BA-B7D7-D24566E0E1A8}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.infrastructure\\repositories\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723865DB-D84D-4466-A33C-6883D4E4674C}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\repositories\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5A29D5F-9D4B-4229-9320-3906AC26603C}|Backend.Application\\Backend.Application.csproj|d:\\users\\ing_klein_brun\\documents\\million\\backend\\backend.application\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +62,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PropertyTraceRepository.cs",
+              "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T14:29:38.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropertyImageRepository.cs",
+              "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T14:29:25.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend.API\\appsettings.json",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\appsettings.json",
+              "RelativeToolTip": "Backend.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-20T14:28:30.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\Program.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Program.cs",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\Program.cs",
+              "RelativeToolTip": "Backend.API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T14:28:26.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Backend.API\\Properties\\launchSettings.json",
@@ -58,12 +126,11 @@
               "RelativeToolTip": "Backend.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-20T04:30:51.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T04:30:51.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "PropertyServiceTests.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Tests\\PropertyServiceTests.cs",
               "RelativeDocumentMoniker": "Backend.Tests\\PropertyServiceTests.cs",
@@ -71,12 +138,11 @@
               "RelativeToolTip": "Backend.Tests\\PropertyServiceTests.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAmwGsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T03:57:30.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T03:57:30.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "IPropertyService.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Application\\Interfaces\\IPropertyService.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Interfaces\\IPropertyService.cs",
@@ -88,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "PropertyService.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Application\\Services\\PropertyService.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Services\\PropertyService.cs",
@@ -100,31 +166,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "OwnerRepository.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\OwnerRepository.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\OwnerRepository.cs",
               "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\OwnerRepository.cs",
               "RelativeToolTip": "Backend.Infrastructure\\Repositories\\OwnerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwA0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T15:39:55.839Z"
+              "WhenOpened": "2025-10-19T15:39:55.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "PropertyRepository.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
               "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
               "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAApwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA4AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T15:34:49.874Z"
+              "WhenOpened": "2025-10-19T15:34:49.874Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Dtos.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Application\\Dtos\\Dtos.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Dtos\\Dtos.cs",
@@ -136,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Entities.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Domain\\Entities\\Entities.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entities\\Entities.cs",
@@ -148,13 +216,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PropertyController.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\Controllers\\PropertyController.cs",
               "RelativeDocumentMoniker": "Backend.API\\Controllers\\PropertyController.cs",
               "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.API\\Controllers\\PropertyController.cs",
               "RelativeToolTip": "Backend.API\\Controllers\\PropertyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAACIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:32:12.62Z",
               "EditorCaption": ""

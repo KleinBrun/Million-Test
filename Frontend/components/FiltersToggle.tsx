@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import type { FiltersPayload, FiltersProps } from "@/types";
+import { copToMM, mmToCOP } from "@/utils/format";
 
 type PropsCompat = Omit<FiltersProps, "onApply" | "onClear"> & {
     onApply: ((next: FiltersPayload) => void) | (() => void);
@@ -37,14 +38,14 @@ export default function FiltersToggle({ name, setName, address, setAddress, minP
 
     const [nameL, setNameL] = useState(name ?? "");
     const [addressL, setAddressL] = useState(address ?? "");
-    const [minL, setMinL] = useState(minPrice ?? "");
-    const [maxL, setMaxL] = useState(maxPrice ?? "");
+    const [minL, setMinL] = useState<string>(copToMM(minPrice ?? ""));
+    const [maxL, setMaxL] = useState<string>(copToMM(maxPrice ?? ""));
 
     useEffect(() => setMounted(true), []);
     useEffect(() => setNameL(name ?? ""), [name]);
     useEffect(() => setAddressL(address ?? ""), [address]);
-    useEffect(() => setMinL(minPrice ?? ""), [minPrice]);
-    useEffect(() => setMaxL(maxPrice ?? ""), [maxPrice]);
+    useEffect(() => setMinL(copToMM(minPrice ?? "")), [minPrice]);
+    useEffect(() => setMaxL(copToMM(maxPrice ?? "")), [maxPrice]);
 
     useEffect(() => {
         if (!open) return;
@@ -66,8 +67,8 @@ export default function FiltersToggle({ name, setName, address, setAddress, minP
         const payload: FiltersPayload = {
             name: (nameL ?? "").trim(),
             address: (addressL ?? "").trim(),
-            minPrice: String(minL ?? "").trim(),
-            maxPrice: String(maxL ?? "").trim(),
+            minPrice: mmToCOP(minL),
+            maxPrice: mmToCOP(maxL),
         };
 
         setName(payload.name);
@@ -139,7 +140,7 @@ export default function FiltersToggle({ name, setName, address, setAddress, minP
             </div>
 
             <div>
-                <label className="mb-1 block text-sm text-gray-600">Precio mín (COP)</label>
+                <label className="mb-1 block text-sm text-gray-600">Precio mín (COP) en MM</label>
                 <input
                     type="number"
                     inputMode="numeric"
@@ -151,7 +152,7 @@ export default function FiltersToggle({ name, setName, address, setAddress, minP
             </div>
 
             <div>
-                <label className="mb-1 block text-sm text-gray-600">Precio máx (COP)</label>
+                <label className="mb-1 block text-sm text-gray-600">Precio máx (COP) en MM</label>
                 <input
                     type="number"
                     inputMode="numeric"

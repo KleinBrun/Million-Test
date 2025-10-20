@@ -5,6 +5,8 @@ import { getProperties } from '@/services/propertyService';
 import { usePropertyStore } from '@/stores/propertyStore';
 import type { Property } from '@/types';
 
+const LISTING_SESSION_FLAG = 'listingSessionActive';
+
 export function usePropertySearch(initialPageSize = 6) {
     const [properties, setProperties] = useState<Property[]>([]);
     const [loading, setLoading] = useState(true);
@@ -19,7 +21,11 @@ export function usePropertySearch(initialPageSize = 6) {
 
     const { name, address, minPrice, maxPrice, currentPage } = filters;
 
-    const fetchProperties = (page = 1, size = pageSize, f?: { name: string; address: string; minPrice: string; maxPrice: string }) => {
+    const fetchProperties = (
+        page = 1,
+        size = pageSize,
+        f?: { name: string; address: string; minPrice: string; maxPrice: string }
+    ) => {
         const n = f?.name ?? name;
         const a = f?.address ?? address;
         const mi = f?.minPrice ?? minPrice;
@@ -47,7 +53,23 @@ export function usePropertySearch(initialPageSize = 6) {
 
     useEffect(() => {
         if (!rehydrated) return;
-        fetchProperties(currentPage, pageSize);
+
+        const isNewTab = !sessionStorage.getItem(LISTING_SESSION_FLAG);
+
+        if (isNewTab) {
+            sessionStorage.setItem(LISTING_SESSION_FLAG, '1');
+            setPageSize(initialPageSize);
+            setFilters({
+                name: '',
+                address: '',
+                minPrice: '',
+                maxPrice: '',
+                currentPage: 1,
+            });
+            fetchProperties(1, initialPageSize);
+        } else {
+            fetchProperties(currentPage, pageSize);
+        }
     }, [rehydrated]);
 
     useEffect(() => {
@@ -62,7 +84,7 @@ export function usePropertySearch(initialPageSize = 6) {
     }, [pageSize]);
 
     const applyFilters = (next?: { name: string; address: string; minPrice: string; maxPrice: string }) => {
-        const filtersToUse = next ?? { name, address, minPrice, maxPrice, };
+        const filtersToUse = next ?? { name, address, minPrice, maxPrice };
 
         setFilters({
             name: filtersToUse.name,
@@ -76,6 +98,7 @@ export function usePropertySearch(initialPageSize = 6) {
     };
 
     const clearFilters = () => {
+        setLoading(true);
         setFilters({
             name: '',
             address: '',
@@ -102,10 +125,19 @@ export function usePropertySearch(initialPageSize = 6) {
     };
 
     return {
-        properties, loading, error, totalPages,
-        currentPage, pageSize, setPageSize,
-        name, address, minPrice, maxPrice,
-        applyFilters, clearFilters,
+        properties,
+        loading,
+        error,
+        totalPages,
+        currentPage,
+        pageSize,
+        setPageSize,
+        name,
+        address,
+        minPrice,
+        maxPrice,
+        applyFilters,
+        clearFilters,
         fetchProperties,
         ...setters,
     };

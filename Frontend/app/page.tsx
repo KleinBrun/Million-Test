@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import AnimatedPage from '@/components/AnimatedPage';
 import FiltersToggle from '@/components/FiltersToggle';
 import Pagination from '@/components/Pagination';
@@ -25,16 +26,42 @@ export default function Home() {
   if (error) {
     return (
       <div className="flex flex-col items-center justify-center h-screen text-center p-6">
-        <p className="text-2xl font-semibold text-red-600 mb-2">Error al cargar propiedades</p>
-        <button
+        <div className="bg-red-100 text-red-600 p-5 rounded-full mb-6 shadow-md animate-bounce">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 9v2m0 4h.01M4.93 4.93l14.14 14.14M12 2a10 10 0 100 20 10 10 0 000-20z"
+            />
+          </svg>
+        </div>
+
+        <h2 className="text-3xl font-bold text-gray-800 mb-3">
+          Error al cargar propiedades
+        </h2>
+
+        <p className="text-gray-500 mb-6 max-w-md">
+          Ocurrió un problema al obtener la información.
+          Puedes intentar recargar la página para volver a intentarlo.
+        </p>
+
+        <motion.button
           onClick={() => window.location.reload()}
-          className="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 transition"
-        >
-          Recargar
-        </button>
+          className="bg-gradient-to-r from-gray-800 to-gray-700 text-white px-6 py-3 rounded-lg hover:from-gray-700 hover:to-gray-600 shadow-md transition"
+          whileHover={{ scale: 1.05 }}
+        >Recargar página
+        </motion.button>
       </div>
     );
   }
+
 
   return (
     <main className="container mx-auto p-6">

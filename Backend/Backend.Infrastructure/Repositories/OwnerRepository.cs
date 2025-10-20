@@ -10,8 +10,8 @@ namespace Backend.Infrastructure.Repositories
 
         public OwnerRepository(IMongoClient client, IConfiguration config)
         {
-            var db = client.GetDatabase(config["Mongo:Database"] ?? "RealEstateDb");
-            _collection = db.GetCollection<Owner>(config["Mongo:Collections:Owners"] ?? "Owners");
+            var db = client.GetDatabase(config["Mongo:Database"]);
+            _collection = db.GetCollection<Owner>(config["Mongo:Collections:Owners"]);
         }
 
         public Owner? GetById(string id) => _collection.Find(x => x.IdOwner == id).FirstOrDefault();

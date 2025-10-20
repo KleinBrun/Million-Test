@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5228/api/Property';
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!;
 
 function ensureJsonResponse(response: Response) {
     const ct = response.headers.get('content-type') || '';

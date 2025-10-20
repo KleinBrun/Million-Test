@@ -3,23 +3,14 @@
 import { PaginationProps } from "@/types";
 import { motion } from "framer-motion";
 
-export default function Pagination({
-    currentPage,
-    totalPages,
-    onChange,
-    className = "",
-    showInfo = true,
-    pageSize = 6,
-    onPageSizeChange,
-}: PaginationProps & { pageSize?: number; onPageSizeChange?: (n: number) => void }) {
+export default function Pagination({ currentPage, totalPages, onChange, className = "", showInfo = true, pageSize = 6, onPageSizeChange, }: PaginationProps & { pageSize?: number; onPageSizeChange?: (n: number) => void }) {
     const safeTotal = Math.max(totalPages || 1, 1);
     const goFirst = () => onChange(1);
     const goPrev = () => onChange(Math.max(currentPage - 1, 1));
     const goNext = () => onChange(Math.min(currentPage + 1, safeTotal));
     const goLast = () => onChange(safeTotal);
 
-    const baseBtn =
-        "px-3 py-1.5 text-sm sm:px-4 sm:py-2 sm:text-base rounded-md border transition select-none focus:outline-none focus:ring-2 focus:ring-gray-400/50";
+    const baseBtn = "px-3 py-1.5 text-sm sm:px-4 sm:py-2 sm:text-base rounded-md border transition select-none focus:outline-none focus:ring-2 focus:ring-gray-400/50";
     const enabled = "bg-gray-800 text-white hover:bg-gray-700 active:scale-[0.98]";
     const disabled = "bg-gray-200 text-gray-400 cursor-not-allowed";
 
