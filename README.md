@@ -60,6 +60,7 @@ cd Million/docker
 ### 2️⃣ Levantar todos los servicios
 
 ```bash
+cd docker
 docker compose up -d --build
 ```
 
