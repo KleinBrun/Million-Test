@@ -1,94 +1,103 @@
-# 🏡 Million – Backend & Frontend
+# 🏡 Million – Sistema Completo de Gestión de Propiedades
 
 ## 📦 Descripción General
-Sistema completo para la **gestión de propiedades inmobiliarias**, compuesto por:
 
-- **Backend API (.NET 9 + MongoDB)**
-- **Frontend Web (Next.js + Tailwind + Zustand)**
+**Million** es una plataforma completa para la **gestión de propiedades inmobiliarias**, compuesta por dos proyectos principales:
 
-Permite listar, filtrar y visualizar propiedades junto con sus propietarios, imágenes e historial de ventas ( tiene algunas funcionalidades mockeadas para una mejor visualizacion ).
+-   **Backend API** (C# .NET 9 + MongoDB)
+-   **Frontend Web** (Next.js 15 + Tailwind CSS + Zustand)
+
+Ambos trabajan de forma integrada para ofrecer una experiencia fluida al listar, filtrar y visualizar propiedades, incluyendo información del propietario, imágenes y trazas históricas de ventas.
 
 ---
 
-## ⚙️ Backend – API REST (.NET 9)
+## 🧭 Estructura del Proyecto
 
-### ✨ Funcionalidades
-- CRUD y consulta paginada de propiedades  
-- Filtros por nombre, dirección y rango de precios  
-- Integración con propietarios, imágenes y trazas históricas  
-- Documentación Swagger y endpoint de salud (`/ping`)
-
-### 🧩 Stack
-| Tecnología | Versión | Uso |
-|-------------|----------|-----|
-| .NET | 9.0 | Framework principal |
-| MongoDB | — | Base de datos |
-| Swashbuckle | 9.0.6 | Swagger/OpenAPI |
-| NUnit | 4.4.0 | Testing |
-
-### 🚀 Ejecución
-```bash
-dotnet restore
-dotnet run --project Backend.API
 ```
-- **API:** [https://localhost:5201](https://localhost:5201)  
-- **Swagger:** [https://localhost:5201/swagger](https://localhost:5201/swagger)
+.
+├── Backend/            # API REST (.NET 9 + MongoDB)
+│   ├── Backend.API/           # Capa de presentación (controllers)
+│   ├── Backend.Application/   # Lógica de negocio
+│   ├── Backend.Domain/        # Entidades
+│   ├── Backend.Infrastructure/# Repositorios MongoDB
+│   └── Backend.Tests/         # Pruebas unitarias
+│
+├── Frontend/           # Interfaz Web (Next.js + Zustand)
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   ├── services/
+│   └── stores/
+│
+└── mongo_mocks/        # Datos JSON de prueba para MongoDB
+```
 
 ---
 
-## 🗄️ Configuración de Base de Datos (MongoDB)
+## ⚙️ Requisitos Previos
 
-### 📋 Conexión y Configuración
-El backend utiliza **MongoDB** como base de datos NoSQL.  
-Edita el archivo `Backend.API/appsettings.json` con esta configuración:
+Asegúrate de tener instaladas las siguientes herramientas:
+
+-   **Node.js** ≥ 18
+-   **pnpm** (recomendado) o npm/yarn
+-   **.NET SDK 9.0+**
+-   **MongoDB** (local o en la nube con MongoDB Atlas)
+
+---
+
+## 🧱 Configuración Inicial
+
+### 1️⃣ Clonar el Repositorio
+
+```bash
+git clone <repository-url>
+cd Million
+```
+
+### 2️⃣ Configurar Variables de Entorno
+
+#### 📍 Frontend (`Frontend/.env.local`)
+
+```bash
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api/Property
+```
+
+#### 📍 Backend (`Backend.API/appsettings.json`)
 
 ```json
 {
-  "ConnectionStrings": {
-    "Mongo": "mongodb://localhost:27017"
-  },
-  "Mongo": {
-    "Database": "RealEstateDB",
-    "Collections": {
-      "Properties": "Properties",
-      "Owners": "Owners",
-      "PropertyImages": "PropertyImages",
-      "PropertyTraces": "PropertyTraces"
-    }
-  }
+	"ConnectionStrings": {
+		"Mongo": "mongodb://localhost:27017"
+	},
+	"Mongo": {
+		"Database": "RealEstateDB",
+		"Collections": {
+			"Properties": "Properties",
+			"Owners": "Owners",
+			"PropertyImages": "PropertyImages",
+			"PropertyTraces": "PropertyTraces"
+		}
+	}
 }
 ```
 
-Además, en el archivo **`Program.cs`** se inicializa el cliente MongoDB con **inyección de dependencias**:
+---
 
-```csharp
-builder.Services.AddSingleton<IMongoClient>(sp =>
-{
-    var cfg = sp.GetRequiredService<IConfiguration>();
-    var cs = cfg.GetConnectionString("Mongo") ?? cfg["Mongo:ConnectionString"] ?? "mongodb://localhost:27017";
-    return new MongoClient(cs);
-});
+## 🧩 Ejecución de Ambos Proyectos
+
+### 🚀 **1. Iniciar el Backend (.NET + MongoDB)**
+
+```bash
+cd Backend
+dotnet restore
+dotnet run --project Backend.API
 ```
 
-### 🧱 Colecciones Requeridas
-| Colección | Descripción | Fuente de datos |
-|------------|-------------|-----------------|
-| **Properties** | Propiedades inmobiliarias con relación a dueños | `mongo_mocks/properties.json` |
-| **Owners** | Propietarios de cada propiedad | `mongo_mocks/owners.json` |
-| **PropertyImages** | Imágenes asociadas a cada propiedad | `mongo_mocks/propertyimages.json` |
-| **PropertyTraces** | Historial de ventas y traspasos | `mongo_mocks/propertytraces.json` |
+-   API: [http://localhost:5228/api/Property](http://localhost:5228/api/Property)
+-   Swagger: [http://localhost:5228/swagger](http://localhost:5228/swagger)
 
-### 📂 Estructura de `mongo_mocks/`
-```
-mongo_mocks/
-├── owners.json
-├── properties.json
-├── propertyimages.json
-└── propertytraces.json
-```
-
-### 📦 Importar Datos de Prueba
-Asegúrate de tener MongoDB en ejecución y luego importa las colecciones:
+💡 **Nota:** Asegúrate de tener MongoDB ejecutándose en `mongodb://localhost:27017`  
+Si es la primera vez, puedes importar los mocks:
 
 ```bash
 mongoimport --db RealEstateDB --collection Properties --file mongo_mocks/properties.json --jsonArray
@@ -97,63 +106,74 @@ mongoimport --db RealEstateDB --collection PropertyImages --file mongo_mocks/pro
 mongoimport --db RealEstateDB --collection PropertyTraces --file mongo_mocks/propertytraces.json --jsonArray
 ```
 
-Una vez importados, la base de datos quedará lista para que el backend funcione correctamente.
-
 ---
 
-## 💻 Frontend – Million App (Next.js 15)
+### 💻 **2. Iniciar el Frontend (Next.js)**
 
-### ✨ Características
-- Listado paginado y filtrado de propiedades  
-- Vista detallada con galería, propietario e historial  
-- Calculadora de hipoteca integrada  
-- Diseño moderno y responsivo con animaciones
+En otra terminal:
 
-### 🧩 Stack
-| Tecnología | Versión | Uso |
-|-------------|----------|-----|
-| Next.js | 15.5.6 | Framework principal |
-| React | 19.1.0 | UI |
-| Tailwind CSS | 3.4.18 | Estilos |
-| Zustand | 5.0.8 | Estado global |
-| Vitest + Testing Library | — | Testing |
-
-### 🚀 Ejecución
 ```bash
+cd Frontend
 pnpm install
 pnpm dev
 ```
-- **App:** [http://localhost:3000](http://localhost:3000)  
-- **Backend requerido:** [http://localhost:5228/api/Property](http://localhost:5228/api/Property)
+
+Luego abre tu navegador en:  
+👉 [http://localhost:3000](http://localhost:3000)
+
+El frontend consumirá automáticamente el backend configurado en el `.env.local`.
 
 ---
 
 ## 🧪 Testing
-- **Backend:** pruebas unitarias de endpoints (`ping`, `property`)  
-- **Frontend:** 42/42 tests pasando (servicios, store y persistencia)
 
 ```bash
 # Backend
+cd Backend
 dotnet test
 
 # Frontend
+cd Frontend
 pnpm test
 ```
 
 ---
 
-## 🧠 Arquitectura Global
-```
-📁 backend/   → API REST (C# + MongoDB)
-📁 frontend/  → Interfaz (Next.js + Zustand)
-📁 mongo_mocks/ → Datos de prueba para MongoDB
-```
+## 🌐 Endpoints Principales
+
+| Método | Endpoint             | Descripción                       |
+| ------ | -------------------- | --------------------------------- |
+| `GET`  | `/api/Property`      | Lista paginada de propiedades     |
+| `GET`  | `/api/Property/{id}` | Detalle completo de una propiedad |
+| `GET`  | `/ping`              | Health check del backend          |
 
 ---
 
-## 🛠️ Requisitos Previos
-- Node.js 18+  
-- .NET 9 SDK  
-- MongoDB (local o Atlas)
+## 🧠 Tecnologías Clave
 
-**Desarrollado por Klein Brun**
+| Categoría     | Tecnología     | Versión |
+| ------------- | -------------- | ------- |
+| Backend       | .NET           | 9.0     |
+| Base de datos | MongoDB        | —       |
+| Frontend      | Next.js        | 15.5.6  |
+| UI            | Tailwind CSS   | 3.4.18  |
+| Estado        | Zustand        | 5.0.8   |
+| Testing       | Vitest / NUnit | —       |
+
+---
+
+## 🧩 Cómo Probar Todo
+
+1. Asegúrate de que **MongoDB** esté corriendo con la informacion suministrada.
+2. Levanta el **backend** con `dotnet run`.
+3. Levanta el **frontend** con `pnpm dev`.
+4. Abre [http://localhost:3000](http://localhost:3000) y usa los filtros para explorar propiedades.
+
+Si todo está correcto, deberías ver las propiedades mockeadas cargadas desde MongoDB.
+
+---
+
+## 📜 Autor
+
+**Desarrollado por Klein Brun González**  
+💻 [GitHub](https://github.com/kleinbrun1997) | ✉️ kleinbrun1997@gmail.com

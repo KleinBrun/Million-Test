@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
               "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
               "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyTraceRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAoAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T14:29:38.934Z",
               "EditorCaption": ""
@@ -83,12 +83,11 @@
               "Title": "PropertyImageRepository.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
-              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs*",
-              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs*",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyImageRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwA0AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:29:25.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T14:29:25.863Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Backend.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-20T14:28:30.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T14:28:30.231Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Backend.API\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwBMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:28:26.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T14:28:26.212Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "Backend.Infrastructure\\Repositories\\OwnerRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwA0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T15:39:55.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T15:39:55.839Z"
             },
             {
               "$type": "Document",
@@ -183,12 +179,11 @@
               "Title": "PropertyRepository.cs",
               "DocumentMoniker": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
-              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyRepository.cs*",
-              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyRepository.cs*",
+              "ToolTip": "D:\\Users\\ING_KLEIN_BRUN\\Documents\\MILLION\\Backend\\Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Repositories\\PropertyRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwA4AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T15:34:49.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T15:34:49.874Z"
             },
             {
               "$type": "Document",
@@ -224,8 +219,7 @@
               "RelativeToolTip": "Backend.API\\Controllers\\PropertyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T15:32:12.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T15:32:12.62Z"
             }
           ]
         }
