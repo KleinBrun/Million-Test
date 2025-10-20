@@ -95,7 +95,7 @@ dotnet run --project Backend.API
 ```
 
 -   API: [http://localhost:5228/api/Property](http://localhost:5228/api/Property)
--   Swagger: [http://localhost:5228/index.html]((http://localhost:5228/index.html))
+-   Swagger: [http://localhost:5228/index.html](http://localhost:5228/index.html)
 
 💡 **Nota:** Asegúrate de tener MongoDB ejecutándose en `mongodb://localhost:27017`  
 Si es la primera vez, puedes importar los mocks:
