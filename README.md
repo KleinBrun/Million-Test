@@ -64,6 +64,7 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api/Property
 
 #### 📍 Backend (Navega a esta ruta `Backend/Backend.API/appsettings.json`)
 
+Asegurate que sean las variables de tu entorno local
 ```json
 {
 	"ConnectionStrings": {
