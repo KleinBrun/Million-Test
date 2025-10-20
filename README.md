@@ -171,6 +171,8 @@ pnpm test
 
 Si todo está correcto, deberías ver las propiedades mockeadas cargadas desde MongoDB.
 
+En la carptea Capturas podemos ver imagenes del aplicativo.
+
 ---
 
 ## 📜 Autor
