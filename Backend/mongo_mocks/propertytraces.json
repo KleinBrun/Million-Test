@@ -1,0 +1,552 @@
+[
+  {
+    "_id": {
+      "$oid": "58d669cbee3772a077021721"
+    },
+    "idPropertyTrace": "58d669cbee3772a077021721",
+    "DateSale": "2013-03-05",
+    "Name": "Venta inicial",
+    "Value": 1120872092,
+    "Tax": 24208044,
+    "idProperty": "30877432d1026706d7e805da"
+  },
+  {
+    "_id": {
+      "$oid": "f64f7fd633dbdde131ca3766"
+    },
+    "idPropertyTrace": "f64f7fd633dbdde131ca3766",
+    "DateSale": "2014-09-08",
+    "Name": "Reventa",
+    "Value": 1244363589,
+    "Tax": 22130723,
+    "idProperty": "30877432d1026706d7e805da"
+  },
+  {
+    "_id": {
+      "$oid": "72e310275dff6c15c0c8e9df"
+    },
+    "idPropertyTrace": "72e310275dff6c15c0c8e9df",
+    "DateSale": "2015-07-06",
+    "Name": "Traspaso",
+    "Value": 1353295181,
+    "Tax": 24068965,
+    "idProperty": "30877432d1026706d7e805da"
+  },
+  {
+    "_id": {
+      "$oid": "b97706ca828bca0385813dba"
+    },
+    "idPropertyTrace": "b97706ca828bca0385813dba",
+    "DateSale": "2018-04-27",
+    "Name": "Venta inicial",
+    "Value": 1274244032,
+    "Tax": 30816979,
+    "idProperty": "9611a11f5125227c3712da86"
+  },
+  {
+    "_id": {
+      "$oid": "681d06bd2aa399dac946dc59"
+    },
+    "idPropertyTrace": "681d06bd2aa399dac946dc59",
+    "DateSale": "2021-02-13",
+    "Name": "Reventa",
+    "Value": 1376881294,
+    "Tax": 33038331,
+    "idProperty": "9611a11f5125227c3712da86"
+  },
+  {
+    "_id": {
+      "$oid": "aeee6f529a279764017f2ed6"
+    },
+    "idPropertyTrace": "aeee6f529a279764017f2ed6",
+    "DateSale": "2020-05-10",
+    "Name": "Traspaso",
+    "Value": 1484863569,
+    "Tax": 25393879,
+    "idProperty": "9611a11f5125227c3712da86"
+  },
+  {
+    "_id": {
+      "$oid": "a0df3dbe4d58fed8a728e7ec"
+    },
+    "idPropertyTrace": "a0df3dbe4d58fed8a728e7ec",
+    "DateSale": "2013-06-03",
+    "Name": "Venta inicial",
+    "Value": 1261465915,
+    "Tax": 25304511,
+    "idProperty": "cfc7403d75e173e4eaede5fe"
+  },
+  {
+    "_id": {
+      "$oid": "b8a880627df7ffe0297c79bf"
+    },
+    "idPropertyTrace": "b8a880627df7ffe0297c79bf",
+    "DateSale": "2015-06-06",
+    "Name": "Reventa",
+    "Value": 1354243911,
+    "Tax": 26916273,
+    "idProperty": "cfc7403d75e173e4eaede5fe"
+  },
+  {
+    "_id": {
+      "$oid": "9c1e2a8a3c0ed16bfe16849e"
+    },
+    "idPropertyTrace": "9c1e2a8a3c0ed16bfe16849e",
+    "DateSale": "2013-06-14",
+    "Name": "Venta inicial",
+    "Value": 298619093,
+    "Tax": 6550728,
+    "idProperty": "bdabe898736a3566f893697b"
+  },
+  {
+    "_id": {
+      "$oid": "7590d273e34f98dff7e4c642"
+    },
+    "idPropertyTrace": "7590d273e34f98dff7e4c642",
+    "DateSale": "2015-02-01",
+    "Name": "Reventa",
+    "Value": 331962680,
+    "Tax": 8209924,
+    "idProperty": "bdabe898736a3566f893697b"
+  },
+  {
+    "_id": {
+      "$oid": "099f4efbacea67c7d1afcc4f"
+    },
+    "idPropertyTrace": "099f4efbacea67c7d1afcc4f",
+    "DateSale": "2017-06-26",
+    "Name": "Traspaso",
+    "Value": 354980081,
+    "Tax": 7127068,
+    "idProperty": "bdabe898736a3566f893697b"
+  },
+  {
+    "_id": {
+      "$oid": "47cb2c083eb8cb37f0a72e9d"
+    },
+    "idPropertyTrace": "47cb2c083eb8cb37f0a72e9d",
+    "DateSale": "2013-02-15",
+    "Name": "Venta inicial",
+    "Value": 1215397302,
+    "Tax": 29933938,
+    "idProperty": "4a3e3e04d42f8ac2acaf1279"
+  },
+  {
+    "_id": {
+      "$oid": "3374cebd4d3fd81b6ee7b3bb"
+    },
+    "idPropertyTrace": "3374cebd4d3fd81b6ee7b3bb",
+    "DateSale": "2014-01-10",
+    "Name": "Reventa",
+    "Value": 1286093700,
+    "Tax": 32099964,
+    "idProperty": "4a3e3e04d42f8ac2acaf1279"
+  },
+  {
+    "_id": {
+      "$oid": "e2601a7462667a4084485304"
+    },
+    "idPropertyTrace": "e2601a7462667a4084485304",
+    "DateSale": "2017-04-04",
+    "Name": "Traspaso",
+    "Value": 1355849501,
+    "Tax": 33204900,
+    "idProperty": "4a3e3e04d42f8ac2acaf1279"
+  },
+  {
+    "_id": {
+      "$oid": "7c10696489a30fd54c7b2c1d"
+    },
+    "idPropertyTrace": "7c10696489a30fd54c7b2c1d",
+    "DateSale": "2013-09-22",
+    "Name": "Venta inicial",
+    "Value": 553652409,
+    "Tax": 10012357,
+    "idProperty": "7a05814d32feb3e719e01fcd"
+  },
+  {
+    "_id": {
+      "$oid": "cd93c0a5eb2d37dc2c9a7a52"
+    },
+    "idPropertyTrace": "cd93c0a5eb2d37dc2c9a7a52",
+    "DateSale": "2014-06-19",
+    "Name": "Reventa",
+    "Value": 582061370,
+    "Tax": 11229618,
+    "idProperty": "7a05814d32feb3e719e01fcd"
+  },
+  {
+    "_id": {
+      "$oid": "bb4734865425feeaa4e2fe98"
+    },
+    "idPropertyTrace": "bb4734865425feeaa4e2fe98",
+    "DateSale": "2015-09-17",
+    "Name": "Traspaso",
+    "Value": 631963720,
+    "Tax": 10704856,
+    "idProperty": "7a05814d32feb3e719e01fcd"
+  },
+  {
+    "_id": {
+      "$oid": "f0749d0b7d52b20cf1cb80b2"
+    },
+    "idPropertyTrace": "f0749d0b7d52b20cf1cb80b2",
+    "DateSale": "2024-10-15",
+    "Name": "Venta inicial",
+    "Value": 1100072295,
+    "Tax": 17192008,
+    "idProperty": "b29ee11b922ce1e6af41e3a2"
+  },
+  {
+    "_id": {
+      "$oid": "a41ba5ef542e196161a9cf81"
+    },
+    "idPropertyTrace": "a41ba5ef542e196161a9cf81",
+    "DateSale": "2025-11-21",
+    "Name": "Reventa",
+    "Value": 1181627446,
+    "Tax": 18949332,
+    "idProperty": "b29ee11b922ce1e6af41e3a2"
+  },
+  {
+    "_id": {
+      "$oid": "edfe6a4aabc4b3a7e38e7431"
+    },
+    "idPropertyTrace": "edfe6a4aabc4b3a7e38e7431",
+    "DateSale": "2016-02-23",
+    "Name": "Venta inicial",
+    "Value": 1151497708,
+    "Tax": 17962362,
+    "idProperty": "69b1a83bdceca5ffb82d2d59"
+  },
+  {
+    "_id": {
+      "$oid": "5aa65fef9f02ce76b119ff90"
+    },
+    "idPropertyTrace": "5aa65fef9f02ce76b119ff90",
+    "DateSale": "2018-10-14",
+    "Name": "Reventa",
+    "Value": 1232465085,
+    "Tax": 21546820,
+    "idProperty": "69b1a83bdceca5ffb82d2d59"
+  },
+  {
+    "_id": {
+      "$oid": "4e863a5e850a965cda2c354f"
+    },
+    "idPropertyTrace": "4e863a5e850a965cda2c354f",
+    "DateSale": "2013-09-17",
+    "Name": "Venta inicial",
+    "Value": 309146856,
+    "Tax": 6164117,
+    "idProperty": "d48bcb1c16b92ce8343cbab4"
+  },
+  {
+    "_id": {
+      "$oid": "e8a908b713e95c939b774f4e"
+    },
+    "idPropertyTrace": "e8a908b713e95c939b774f4e",
+    "DateSale": "2014-01-09",
+    "Name": "Reventa",
+    "Value": 331607029,
+    "Tax": 6246065,
+    "idProperty": "d48bcb1c16b92ce8343cbab4"
+  },
+  {
+    "_id": {
+      "$oid": "618c1266f6a90663f76c7a9c"
+    },
+    "idPropertyTrace": "618c1266f6a90663f76c7a9c",
+    "DateSale": "2015-06-03",
+    "Name": "Venta inicial",
+    "Value": 1236628581,
+    "Tax": 25173250,
+    "idProperty": "bdf672eb231645ae36f2e1e4"
+  },
+  {
+    "_id": {
+      "$oid": "fe3fa6bad17408d946a7c7fa"
+    },
+    "idPropertyTrace": "fe3fa6bad17408d946a7c7fa",
+    "DateSale": "2018-06-10",
+    "Name": "Reventa",
+    "Value": 1338820515,
+    "Tax": 23584148,
+    "idProperty": "bdf672eb231645ae36f2e1e4"
+  },
+  {
+    "_id": {
+      "$oid": "8d9f2b87f6e3490cacaead49"
+    },
+    "idPropertyTrace": "8d9f2b87f6e3490cacaead49",
+    "DateSale": "2013-03-03",
+    "Name": "Venta inicial",
+    "Value": 254454300,
+    "Tax": 4242280,
+    "idProperty": "ffe5b54f511210d472406eb1"
+  },
+  {
+    "_id": {
+      "$oid": "ca9f7ac8cb3650e6e92df497"
+    },
+    "idPropertyTrace": "ca9f7ac8cb3650e6e92df497",
+    "DateSale": "2016-04-16",
+    "Name": "Reventa",
+    "Value": 272888638,
+    "Tax": 4950700,
+    "idProperty": "ffe5b54f511210d472406eb1"
+  },
+  {
+    "_id": {
+      "$oid": "dfdef5207918795ef338b1e6"
+    },
+    "idPropertyTrace": "dfdef5207918795ef338b1e6",
+    "DateSale": "2019-09-17",
+    "Name": "Venta inicial",
+    "Value": 647203374,
+    "Tax": 13934740,
+    "idProperty": "4dc2efcd1b237b51cad30387"
+  },
+  {
+    "_id": {
+      "$oid": "791e8b2e376bd54661b85a99"
+    },
+    "idPropertyTrace": "791e8b2e376bd54661b85a99",
+    "DateSale": "2020-12-27",
+    "Name": "Reventa",
+    "Value": 724404576,
+    "Tax": 15601296,
+    "idProperty": "4dc2efcd1b237b51cad30387"
+  },
+  {
+    "_id": {
+      "$oid": "0ba4cdb5f20208611c9ddc24"
+    },
+    "idPropertyTrace": "0ba4cdb5f20208611c9ddc24",
+    "DateSale": "2013-10-03",
+    "Name": "Venta inicial",
+    "Value": 935533093,
+    "Tax": 18975291,
+    "idProperty": "34d184474a7cf48dce22c8be"
+  },
+  {
+    "_id": {
+      "$oid": "4ac29d7172d3e19530405fb8"
+    },
+    "idPropertyTrace": "4ac29d7172d3e19530405fb8",
+    "DateSale": "2015-02-17",
+    "Name": "Reventa",
+    "Value": 1000480365,
+    "Tax": 24220877,
+    "idProperty": "34d184474a7cf48dce22c8be"
+  },
+  {
+    "_id": {
+      "$oid": "30ad8282feb1f5b583370107"
+    },
+    "idPropertyTrace": "30ad8282feb1f5b583370107",
+    "DateSale": "2015-12-25",
+    "Name": "Traspaso",
+    "Value": 1062197404,
+    "Tax": 25210831,
+    "idProperty": "34d184474a7cf48dce22c8be"
+  },
+  {
+    "_id": {
+      "$oid": "e42a31e15dcf0cd5b6588e41"
+    },
+    "idPropertyTrace": "e42a31e15dcf0cd5b6588e41",
+    "DateSale": "2013-01-03",
+    "Name": "Venta inicial",
+    "Value": 661955072,
+    "Tax": 11238344,
+    "idProperty": "bc451d7a7da82b31571c2e99"
+  },
+  {
+    "_id": {
+      "$oid": "df128c4d670cbffbac850a70"
+    },
+    "idPropertyTrace": "df128c4d670cbffbac850a70",
+    "DateSale": "2016-04-21",
+    "Name": "Reventa",
+    "Value": 723508593,
+    "Tax": 12987740,
+    "idProperty": "bc451d7a7da82b31571c2e99"
+  },
+  {
+    "_id": {
+      "$oid": "190a832a5c522af0d5d513a6"
+    },
+    "idPropertyTrace": "190a832a5c522af0d5d513a6",
+    "DateSale": "2013-04-06",
+    "Name": "Venta inicial",
+    "Value": 356011082,
+    "Tax": 6946799,
+    "idProperty": "81fb75377817cb557ab0b46f"
+  },
+  {
+    "_id": {
+      "$oid": "899731cf41b0d29f6306592f"
+    },
+    "idPropertyTrace": "899731cf41b0d29f6306592f",
+    "DateSale": "2015-12-18",
+    "Name": "Reventa",
+    "Value": 398094400,
+    "Tax": 8845809,
+    "idProperty": "81fb75377817cb557ab0b46f"
+  },
+  {
+    "_id": {
+      "$oid": "82c5bcb5e18ee8781432bd71"
+    },
+    "idPropertyTrace": "82c5bcb5e18ee8781432bd71",
+    "DateSale": "2017-07-16",
+    "Name": "Traspaso",
+    "Value": 441512102,
+    "Tax": 8782103,
+    "idProperty": "81fb75377817cb557ab0b46f"
+  },
+  {
+    "_id": {
+      "$oid": "98dcbe86e9c30b993f2a8a88"
+    },
+    "idPropertyTrace": "98dcbe86e9c30b993f2a8a88",
+    "DateSale": "2015-01-08",
+    "Name": "Venta inicial",
+    "Value": 940287363,
+    "Tax": 16477505,
+    "idProperty": "df7f92c143e556641d2d648a"
+  },
+  {
+    "_id": {
+      "$oid": "71ca40f98dcc16a7fb95593f"
+    },
+    "idPropertyTrace": "71ca40f98dcc16a7fb95593f",
+    "DateSale": "2018-05-07",
+    "Name": "Reventa",
+    "Value": 1030487599,
+    "Tax": 17002316,
+    "idProperty": "df7f92c143e556641d2d648a"
+  },
+  {
+    "_id": {
+      "$oid": "5a27b79dab89e3f12f63c9d1"
+    },
+    "idPropertyTrace": "5a27b79dab89e3f12f63c9d1",
+    "DateSale": "2019-12-26",
+    "Name": "Traspaso",
+    "Value": 1091241118,
+    "Tax": 22469000,
+    "idProperty": "df7f92c143e556641d2d648a"
+  },
+  {
+    "_id": {
+      "$oid": "fa70023f422387e98e13519b"
+    },
+    "idPropertyTrace": "fa70023f422387e98e13519b",
+    "DateSale": "2018-08-07",
+    "Name": "Venta inicial",
+    "Value": 1161084059,
+    "Tax": 25406886,
+    "idProperty": "446ade4a52fa5a10e8655f24"
+  },
+  {
+    "_id": {
+      "$oid": "1045abe82ba53cce8cfd5341"
+    },
+    "idPropertyTrace": "1045abe82ba53cce8cfd5341",
+    "DateSale": "2020-07-24",
+    "Name": "Reventa",
+    "Value": 1284288693,
+    "Tax": 20752834,
+    "idProperty": "446ade4a52fa5a10e8655f24"
+  },
+  {
+    "_id": {
+      "$oid": "fe5cb04ff3de128a07a3d7fb"
+    },
+    "idPropertyTrace": "fe5cb04ff3de128a07a3d7fb",
+    "DateSale": "2020-02-14",
+    "Name": "Traspaso",
+    "Value": 1436746400,
+    "Tax": 34643213,
+    "idProperty": "446ade4a52fa5a10e8655f24"
+  },
+  {
+    "_id": {
+      "$oid": "a3bfd9d030c4116859841961"
+    },
+    "idPropertyTrace": "a3bfd9d030c4116859841961",
+    "DateSale": "2015-11-06",
+    "Name": "Venta inicial",
+    "Value": 415746410,
+    "Tax": 8331115,
+    "idProperty": "c4105ff52fa7a817cc72eee2"
+  },
+  {
+    "_id": {
+      "$oid": "7c791ccda1086e7b669e5255"
+    },
+    "idPropertyTrace": "7c791ccda1086e7b669e5255",
+    "DateSale": "2017-02-20",
+    "Name": "Reventa",
+    "Value": 446972195,
+    "Tax": 10584459,
+    "idProperty": "c4105ff52fa7a817cc72eee2"
+  },
+  {
+    "_id": {
+      "$oid": "84580ae414a19fb2a7525dc2"
+    },
+    "idPropertyTrace": "84580ae414a19fb2a7525dc2",
+    "DateSale": "2017-07-02",
+    "Name": "Traspaso",
+    "Value": 492320011,
+    "Tax": 9494429,
+    "idProperty": "c4105ff52fa7a817cc72eee2"
+  },
+  {
+    "_id": {
+      "$oid": "c618f4bc794e2cb0754e554f"
+    },
+    "idPropertyTrace": "c618f4bc794e2cb0754e554f",
+    "DateSale": "2013-01-27",
+    "Name": "Venta inicial",
+    "Value": 429944664,
+    "Tax": 8950977,
+    "idProperty": "6aab96f03be771ac3c890bef"
+  },
+  {
+    "_id": {
+      "$oid": "28b716bcfe11a3885ccb28c7"
+    },
+    "idPropertyTrace": "28b716bcfe11a3885ccb28c7",
+    "DateSale": "2014-04-25",
+    "Name": "Reventa",
+    "Value": 479707434,
+    "Tax": 9534867,
+    "idProperty": "6aab96f03be771ac3c890bef"
+  },
+  {
+    "_id": {
+      "$oid": "751b70528cbcc60229bb876e"
+    },
+    "idPropertyTrace": "751b70528cbcc60229bb876e",
+    "DateSale": "2013-05-07",
+    "Name": "Venta inicial",
+    "Value": 789826630,
+    "Tax": 12112855,
+    "idProperty": "bbff04e57286455b37da3fff"
+  },
+  {
+    "_id": {
+      "$oid": "329a388ecf7aee0f382c77ad"
+    },
+    "idPropertyTrace": "329a388ecf7aee0f382c77ad",
+    "DateSale": "2016-01-09",
+    "Name": "Reventa",
+    "Value": 880719853,
+    "Tax": 14752363,
+    "idProperty": "bbff04e57286455b37da3fff"
+  }
+]

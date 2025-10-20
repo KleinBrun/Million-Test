@@ -1,11 +1,7 @@
 'use client';
 
+import { FilterFormProps } from '@/types';
 import { useState } from 'react';
-import { Property } from '../types/property';
-
-interface FilterFormProps {
-    onFilter: (filters: Partial<Property & { minPrice?: number; maxPrice?: number }>) => void;
-}
 
 export default function FilterForm({ onFilter }: FilterFormProps) {
     const [name, setName] = useState('');

@@ -1,159 +1,112 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
-import PropertyList from '../components/PropertyList';
-import { getProperties } from '../services/propertyService';
-import { Property } from '../types/property';
-import PropertyCardSkeleton from '../components/skeleton/PropertyCardSkeleton';
-import PropertyFilters from '../components/PropertyFilters';
 import { motion } from 'framer-motion';
-import { usePropertyStore } from '@/stores/propertyStore';
+import AnimatedPage from '@/components/AnimatedPage';
+import FiltersToggle from '@/components/FiltersToggle';
+import Pagination from '@/components/Pagination';
+import PropertyList from '@/components/PropertyList';
+import PropertyCardSkeleton from '@/components/skeleton/PropertyCardSkeleton';
+import { usePropertySearch } from '@/hooks/usePropertySearch';
 
 export default function Home() {
-  const [properties, setProperties] = useState<Property[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const { properties, loading, error, totalPages, currentPage, pageSize,
+    setPageSize, name, address, minPrice, maxPrice, setName, setAddress,
+    setMinPrice, setMaxPrice, setPage, applyFilters, clearFilters, } = usePropertySearch(6);
 
-  // filtros
-  const [name, setName] = useState('');
-  const [address, setAddress] = useState('');
-  const [minPrice, setMinPrice] = useState('');
-  const [maxPrice, setMaxPrice] = useState('');
-
-  // precarga en cache (Zustand) para el detalle
-  const setMany = usePropertyStore((s) => s.setMany);
-
-  useEffect(() => {
-    let alive = true;
-    setLoading(true);
-    setError(null);
-
-    getProperties()
-      .then((data) => {
-        if (!alive) return;
-        setProperties(data);
-        // precargar cache para navegación sin refetch
-        setMany(data);
-      })
-      .catch((err) => {
-        if (!alive) return;
-        setError(err instanceof Error ? err.message : 'Error desconocido');
-      })
-      .finally(() => alive && setLoading(false));
-
-    return () => { alive = false; };
-  }, [setMany]);
-
-  // filtrado memoizado
-  const filteredProperties = useMemo(() => {
-    const min = minPrice ? Number(minPrice) * 1_000_000 : 0;
-    const max = maxPrice ? Number(maxPrice) * 1_000_000 : Infinity;
-
-    return properties.filter((p) =>
-      p.name.toLowerCase().includes(name.toLowerCase()) &&
-      p.address.toLowerCase().includes(address.toLowerCase()) &&
-      p.price >= min &&
-      p.price <= max
-    );
-  }, [name, address, minPrice, maxPrice, properties]);
-
-  // loading
   if (loading) {
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-        {Array.from({ length: 6 }).map((_, i) => (
+        {Array.from({ length: pageSize }).map((_, i) => (
           <PropertyCardSkeleton key={i} />
         ))}
       </div>
     );
   }
 
-  // error de red/servidor
   if (error) {
     return (
       <div className="flex flex-col items-center justify-center h-screen text-center p-6">
-        <p className="text-2xl font-semibold text-red-600 mb-2">Propiedades no encontradas</p>
-        <p className="text-gray-600 mb-6">{error}</p>
-        <motion.button
-          onClick={() => window.location.reload()}
-          className="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 transition"
-          whileHover={{ scale: 1.05 }}
-        >
-          Recargar
-        </motion.button>
-      </div>
-    );
-  }
-
-  // sin datos desde API
-  if (!properties || properties.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen text-center p-6">
-        <p className="text-2xl font-semibold text-gray-700 mb-4">
-          No se encontraron propiedades
-        </p>
-        <motion.button
-          onClick={() => window.location.reload()}
-          className="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 transition"
-          whileHover={{ scale: 1.05 }}
-        >
-          Recargar
-        </motion.button>
-      </div>
-    );
-  }
-
-  // sin resultados por filtros
-  if (filteredProperties.length === 0) {
-    return (
-      <main className="container mx-auto p-6 text-center">
-        <h1 className="text-3xl font-bold mb-6">Propiedades en Venta</h1>
-
-        <PropertyFilters
-          name={name} setName={setName}
-          address={address} setAddress={setAddress}
-          minPrice={minPrice} setMinPrice={setMinPrice}
-          maxPrice={maxPrice} setMaxPrice={setMaxPrice}
-        />
-
-        <div className="mt-10 flex flex-col items-center">
-          <p className="text-lg text-gray-700 mb-4">
-            No hay resultados con los filtros aplicados.
-          </p>
-          <div className="flex gap-3">
-            <motion.button
-              onClick={() => { setName(''); setAddress(''); setMinPrice(''); setMaxPrice(''); }}
-              className="bg-gray-800 text-white px-5 py-2 rounded hover:bg-gray-700 transition"
-              whileHover={{ scale: 1.05 }}
-            >
-              Limpiar filtros
-            </motion.button>
-            <motion.button
-              onClick={() => window.location.reload()}
-              className="bg-gray-200 text-gray-900 px-5 py-2 rounded hover:bg-gray-300 transition"
-              whileHover={{ scale: 1.05 }}
-            >
-              Recargar
-            </motion.button>
-          </div>
+        <div className="bg-red-100 text-red-600 p-5 rounded-full mb-6 shadow-md animate-bounce">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 9v2m0 4h.01M4.93 4.93l14.14 14.14M12 2a10 10 0 100 20 10 10 0 000-20z"
+            />
+          </svg>
         </div>
-      </main>
+
+        <h2 className="text-3xl font-bold text-gray-800 mb-3">
+          Error al cargar propiedades
+        </h2>
+
+        <p className="text-gray-500 mb-6 max-w-md">
+          Ocurrió un problema al obtener la información.
+          Puedes intentar recargar la página para volver a intentarlo.
+        </p>
+
+        <motion.button
+          onClick={() => window.location.reload()}
+          className="bg-gradient-to-r from-gray-800 to-gray-700 text-white px-6 py-3 rounded-lg hover:from-gray-700 hover:to-gray-600 shadow-md transition"
+          whileHover={{ scale: 1.05 }}
+        >Recargar página
+        </motion.button>
+      </div>
     );
   }
 
-  // lista con resultados
+
   return (
     <main className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Propiedades en Venta</h1>
+      <div className="mb-6 flex items-center justify-between">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight">
+          Propiedades en Venta
+        </h1>
+        <div className="sticky top-4 z-20">
+          <FiltersToggle
+            name={name}
+            setName={setName}
+            address={address}
+            setAddress={setAddress}
+            minPrice={minPrice}
+            setMinPrice={setMinPrice}
+            maxPrice={maxPrice}
+            setMaxPrice={setMaxPrice}
+            onApply={applyFilters}
+            onClear={clearFilters}
+          />
+        </div>
+      </div>
 
-      <PropertyFilters
-        name={name} setName={setName}
-        address={address} setAddress={setAddress}
-        minPrice={minPrice} setMinPrice={setMinPrice}
-        maxPrice={maxPrice} setMaxPrice={setMaxPrice}
-      />
+      {properties.length === 0 ? (
+        <p className="text-center text-gray-600 mt-10">No se encontraron propiedades.</p>
+      ) : (
+        <>
+          <AnimatedPage pageKey={currentPage} variant="slide">
+            <PropertyList properties={properties} />
+          </AnimatedPage>
 
-      <PropertyList properties={filteredProperties} />
+          <Pagination
+            className="mt-10"
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onChange={setPage}
+            showInfo
+            pageSize={pageSize}
+            onPageSizeChange={(n) => {
+              setPageSize(n);
+              setPage(1);
+            }}
+          />
+        </>
+      )}
     </main>
   );
 }

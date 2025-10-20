@@ -97,3 +97,5 @@ C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.API\obj\Debug\
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.API\obj\Debug\net9.0\Backend.API.pdb
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.API\obj\Debug\net9.0\Backend.API.genruntimeconfig.cache
 C:\Users\ING_KLEIN_BRUN\Documents\Million\Million\Backend\Backend.API\obj\Debug\net9.0\ref\Backend.API.dll
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.API\obj\Debug\net9.0\Backend.API.sourcelink.json
+D:\Users\ING_KLEIN_BRUN\Documents\MILLION\Backend\Backend.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
