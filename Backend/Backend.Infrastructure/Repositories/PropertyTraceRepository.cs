@@ -14,7 +14,6 @@ namespace Backend.Infrastructure.Repositories
             _collection = db.GetCollection<PropertyTrace>(config["Mongo:Collections:PropertyTraces"] ?? "PropertyTraces");
         }
 
-        public List<PropertyTrace> GetByProperty(string idProperty) =>
-            _collection.Find(x => x.IdProperty == idProperty).ToList();
+        public List<PropertyTrace> GetByProperty(string idProperty) => _collection.Find(x => x.IdProperty == idProperty).ToList();
     }
 }

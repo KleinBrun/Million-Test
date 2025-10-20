@@ -4,18 +4,17 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { usePropertyStore } from '@/stores/propertyStore';
-import { CardProps, Property } from '@/types';
+import { CardProps } from '@/types';
 
 export default function PropertyCard({ property }: CardProps) {
     const router = useRouter();
     const setOne = usePropertyStore((s) => s.setOne);
 
     const goDetail = () => {
-        setOne(property); // cachea en Zustand
+        setOne(property);
         router.push(`/property/${property.idProperty}`);
     };
 
-    // ✅ Usa la primera imagen si existe, o un placeholder
     const imageUrl =
         property.images && property.images.length > 0
             ? property.images[0].file

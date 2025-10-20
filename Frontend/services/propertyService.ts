@@ -1,5 +1,3 @@
-import { Property } from "@/types/property";
-
 const BASE_URL = 'http://localhost:5228/api/Property';
 
 function ensureJsonResponse(response: Response) {

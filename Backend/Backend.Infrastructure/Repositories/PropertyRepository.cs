@@ -35,10 +35,7 @@ namespace Backend.Infrastructure.Repositories
 
             var total = _collection.CountDocuments(filter);
 
-            var items = _collection.Find(filter)
-                                   .Skip((page - 1) * pageSize)
-                                   .Limit(pageSize)
-                                   .ToList();
+            var items = _collection.Find(filter).Skip((page - 1) * pageSize).Limit(pageSize).ToList();
 
             return (items, total);
         }

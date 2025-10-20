@@ -11,8 +11,7 @@ export const usePropertyStore = create<PropertyState>()(
             setOne: (prop) =>
                 set((state) => ({
                     properties: [
-                        ...state.properties.filter((p) => p.idProperty !== prop.idProperty),
-                        prop,
+                        ...state.properties.filter((p) => p.idProperty !== prop.idProperty), prop,
                     ],
                 })),
 
@@ -23,10 +22,7 @@ export const usePropertyStore = create<PropertyState>()(
                 maxPrice: '',
                 currentPage: 1,
             },
-            setFilters: (filters) =>
-                set((state) => ({
-                    filters: { ...state.filters, ...filters },
-                })),
+            setFilters: (filters) => set((state) => ({ filters: { ...state.filters, ...filters }, })),
 
             rehydrated: false,
         }),

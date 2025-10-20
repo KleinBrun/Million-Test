@@ -41,20 +41,6 @@ export type Trace = {
     value: number;
     tax: number;
 };
-
-export interface FiltersProps {
-    name: string;
-    setName: (value: string) => void;
-    address: string;
-    setAddress: (value: string) => void;
-    minPrice: string;
-    setMinPrice: (value: string) => void;
-    maxPrice: string;
-    setMaxPrice: (value: string) => void;
-    onApply: () => void;
-    onClear: () => void;
-}
-
 export interface FilterFormProps {
     onFilter: (filters: Partial<Property & { minPrice?: number; maxPrice?: number }>) => void;
 }
@@ -83,4 +69,8 @@ export interface PropertyState {
     setFilters: (filters: Partial<PropertyState['filters']>) => void;
 
     rehydrated: boolean;
+}
+
+export interface CompanyContactProps {
+    fadeInUp?: any;
 }

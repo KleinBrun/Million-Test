@@ -16,18 +16,9 @@ namespace Backend.API.Controllers
         }
 
         [HttpGet]
-        public ActionResult Get(
-            string? name,
-            string? address,
-            decimal? minPrice,
-            decimal? maxPrice,
-            int page = 1,
-            int pageSize = 10)
-        {
+        public ActionResult Get( string? name, string? address, decimal? minPrice, decimal? maxPrice, int page = 1, int pageSize = 10) {
             var (properties, totalCount) = _service.GetAllWithRelations(name, address, minPrice, maxPrice, page, pageSize);
-
             var totalPages = (int)Math.Ceiling((double)totalCount / pageSize);
-
             return Ok(new
             {
                 totalCount,

@@ -17,9 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
     var cfg = sp.GetRequiredService<IConfiguration>();
-    var cs = cfg.GetConnectionString("Mongo")
-             ?? cfg["Mongo:ConnectionString"]
-             ?? "mongodb://localhost:27017";
+    var cs = cfg.GetConnectionString("Mongo") ?? cfg["Mongo:ConnectionString"] ?? "mongodb://localhost:27017";
     return new MongoClient(cs);
 });
 
@@ -53,3 +51,5 @@ app.MapControllers();
 
 Console.WriteLine("App escuchando en: " + string.Join(", ", app.Urls));
 app.Run();
+
+public partial class Program { }

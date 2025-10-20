@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import type { Trace } from "./domain";
+import type { Property, Trace } from "./domain";
 
 export type AnimatedPageProps = {
     pageKey: string | number;
@@ -66,3 +66,33 @@ export type TraceProps = {
     traces?: Trace[];
     formatCOP: (n?: number) => string;
 };
+
+export type FiltersPayload = {
+    name: string;
+    address: string;
+    minPrice: string;
+    maxPrice: string;
+};
+
+export type FiltersProps = {
+    name: string;
+    address: string;
+    minPrice: string;
+    maxPrice: string;
+    setName: (v: string) => void;
+    setAddress: (v: string) => void;
+    setMinPrice: (v: string) => void;
+    setMaxPrice: (v: string) => void;
+    onApply: (next: FiltersPayload) => void;
+    onClear?: (next?: FiltersPayload) => void;
+};
+
+export type Specs = {
+    beds: number;
+    baths: number;
+    areaM2: number;
+    type: string;
+    year: number | string;
+    hoaCOP: number;
+};
+

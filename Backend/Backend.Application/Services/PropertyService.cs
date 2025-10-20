@@ -12,21 +12,14 @@ namespace Backend.Application.Services
         private readonly PropertyImageRepository _imageRepo;
         private readonly PropertyTraceRepository _traceRepo;
 
-        public PropertyService(
-            PropertyRepository propertyRepo,
-            OwnerRepository ownerRepo,
-            PropertyImageRepository imageRepo,
-            PropertyTraceRepository traceRepo)
-        {
+        public PropertyService( PropertyRepository propertyRepo, OwnerRepository ownerRepo, PropertyImageRepository imageRepo, PropertyTraceRepository traceRepo) {
             _propertyRepo = propertyRepo;
             _ownerRepo = ownerRepo;
             _imageRepo = imageRepo;
             _traceRepo = traceRepo;
         }
 
-        public (List<PropertyFullDto> Data, long TotalCount) GetAllWithRelations(
-            string? name, string? address, decimal? minPrice, decimal? maxPrice, int page, int pageSize)
-        {
+        public (List<PropertyFullDto> Data, long TotalCount) GetAllWithRelations( string? name, string? address, decimal? minPrice, decimal? maxPrice, int page, int pageSize) {
             var (props, total) = _propertyRepo.GetFiltered(name, address, minPrice, maxPrice, page, pageSize);
 
             var result = props.Select(p => new PropertyFullDto

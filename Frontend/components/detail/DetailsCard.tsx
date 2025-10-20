@@ -2,7 +2,6 @@
 
 import { DetailsCardProps } from "@/types";
 
-
 export default function DetailsCard({ beds, baths, areaM2, type, year, hoaCOP, formatCOP, title = 'Detalles principales', className = '', }: DetailsCardProps) {
     const F = (v: unknown, suffix?: string) => v === null || v === undefined || v === '' ? '—' : `${v}${suffix ?? ''}`;
 
