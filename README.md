@@ -50,7 +50,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 ### 1️⃣ Clonar el Repositorio
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/KleinBrun/Million.git)
 cd Million
 ```
 
