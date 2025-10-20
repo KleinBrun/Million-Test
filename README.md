@@ -135,9 +135,12 @@ dotnet test
 # Frontend
 cd Frontend
 pnpm test
-```
-
+```  
 ---
+
+## ❌ Manejo de Errores
+Se incluye la visualizacion en el front en los casos que no trae informacion el back(id no existente o fetch fallando). 
+
 
 ## 🌐 Endpoints Principales
 

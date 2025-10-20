@@ -1,0 +1,14 @@
+Frontend/node_modules
+Frontend/.next
+Frontend/.turbo
+Frontend/out
+Frontend/dist
+
+**/bin
+**/obj
+**/.vs
+
+.git
+.gitignore
+.DS_Store
+Thumbs.db
