@@ -93,9 +93,7 @@ describe('propertyService', () => {
 
       const result = await getProperties();
 
-      expect(mockFetch).toHaveBeenCalledWith(
-        'http://localhost:5228/api/Property?page=1&pageSize=10'
-      );
+      expect(mockFetch).toHaveBeenCalledWith( 'http://localhost:5228/api/Property?page=1&pageSize=10' );
       expect(result).toEqual(mockResponse);
     });
 
