@@ -127,11 +127,11 @@ npm run dev
 Abre 👉 [http://localhost:3000](http://localhost:3000)
 
 Asegúrate de tener el archivo `Frontend/.env.local` con:
+para facilidad de la prueba se incluye el archivo .env.local en git 
 
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api
 ```
-para facilidad de la prueba se incluye el archivo .env.local en git 
 ---
 
 ## 🧪 Testing
