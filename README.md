@@ -56,7 +56,7 @@ cd Million
 
 ### 2️⃣ Configurar Variables de Entorno
 
-#### 📍 Frontend (navega a la carpeta `Frontend` y crea el archivo `/.env.local` y pon el contenido mostrado a continuacion)
+#### 📍 Frontend (navega a la carpeta `Frontend` y crea el archivo `.env.local` y pon el contenido mostrado a continuacion)
 
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://localhost:5228/api/Property
