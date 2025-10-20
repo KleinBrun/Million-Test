@@ -60,6 +60,7 @@ cd Million/docker
 ### 2️⃣ Levantar todos los servicios
 
 ```bash
+cd docker
 docker compose up -d --build
 ```
 
@@ -87,7 +88,7 @@ million-mongodb   Up  (0.0.0.0:27017->27017/tcp)
 
 ### 4️⃣ Probar la aplicación
 
-- **Swagger Backend:** 👉 [http://localhost:5228/swagger](http://localhost:5228/swagger)
+- **Swagger Backend:** 👉 [http://localhost:5228/index.html](http://localhost:5228/index.html)
 - **Frontend:** 👉 [http://localhost:3001](http://localhost:3001)
 
 El frontend y la API estarán conectados automáticamente.  
