@@ -41,7 +41,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 -   **Node.js** ≥ 18
 -   **pnpm** (recomendado) o npm/yarn
 -   **.NET SDK 9.0+**
--   **MongoDB** (local o en la nube con MongoDB Atlas con las collecciones correspondientes)
+-   **MongoDB** (local o en la nube con MongoDB Atlas)
 
 ---
 
@@ -50,7 +50,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 ### 1️⃣ Clonar el Repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/KleinBrun/Million.git
 cd Million
 ```
 
