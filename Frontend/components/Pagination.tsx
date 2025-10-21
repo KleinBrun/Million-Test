@@ -2,6 +2,7 @@
 
 import { PaginationProps } from "@/types";
 import { motion } from "framer-motion";
+import React from "react";
 
 export default function Pagination({ currentPage, totalPages, onChange, className = "", showInfo = true, pageSize = 6, onPageSizeChange, }: PaginationProps & { pageSize?: number; onPageSizeChange?: (n: number) => void }) {
     const safeTotal = Math.max(totalPages || 1, 1);

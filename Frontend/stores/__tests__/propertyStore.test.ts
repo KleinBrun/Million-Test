@@ -2,7 +2,6 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { usePropertyStore } from '../propertyStore';
 import type { Property } from '@/types';
 
-// Usar el mock global de localStorage
 
 describe('propertyStore', () => {
   const mockProperty: Property = {
@@ -31,7 +30,6 @@ describe('propertyStore', () => {
   ];
 
   beforeEach(() => {
-    // Reset store state
     usePropertyStore.setState({
       properties: [],
       filters: {
@@ -49,20 +47,18 @@ describe('propertyStore', () => {
   describe('setMany', () => {
     it('debería establecer múltiples propiedades', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setMany(mockProperties);
-      
+
       expect(getState().properties).toEqual(mockProperties);
     });
 
     it('debería reemplazar propiedades existentes', () => {
       const { getState } = usePropertyStore;
-      
-      // Establecer propiedades iniciales
+
       getState().setMany([mockProperty]);
       expect(getState().properties).toHaveLength(1);
-      
-      // Reemplazar con nuevas propiedades
+
       getState().setMany(mockProperties);
       expect(getState().properties).toEqual(mockProperties);
       expect(getState().properties).toHaveLength(2);
@@ -72,27 +68,27 @@ describe('propertyStore', () => {
   describe('getOne', () => {
     it('debería retornar una propiedad por ID', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setMany(mockProperties);
       const property = getState().getOne('1');
-      
+
       expect(property).toEqual(mockProperty);
     });
 
     it('debería retornar undefined si no encuentra la propiedad', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setMany(mockProperties);
       const property = getState().getOne('999');
-      
+
       expect(property).toBeUndefined();
     });
 
     it('debería retornar undefined si no hay propiedades', () => {
       const { getState } = usePropertyStore;
-      
+
       const property = getState().getOne('1');
-      
+
       expect(property).toBeUndefined();
     });
   });
@@ -100,41 +96,36 @@ describe('propertyStore', () => {
   describe('setOne', () => {
     it('debería agregar una nueva propiedad', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setOne(mockProperty);
-      
+
       expect(getState().properties).toHaveLength(1);
       expect(getState().properties[0]).toEqual(mockProperty);
     });
 
     it('debería actualizar una propiedad existente', () => {
       const { getState } = usePropertyStore;
-      
-      // Agregar propiedad inicial
+
       getState().setOne(mockProperty);
       expect(getState().properties[0].name).toBe('Casa de Prueba');
-      
-      // Actualizar propiedad
+
       const updatedProperty = { ...mockProperty, name: 'Casa Actualizada' };
       getState().setOne(updatedProperty);
-      
+
       expect(getState().properties).toHaveLength(1);
       expect(getState().properties[0].name).toBe('Casa Actualizada');
     });
 
     it('debería mantener otras propiedades al actualizar una', () => {
       const { getState } = usePropertyStore;
-      
-      // Agregar múltiples propiedades
+
       getState().setMany(mockProperties);
       expect(getState().properties).toHaveLength(2);
-      
-      // Actualizar una propiedad específica
+
       const updatedProperty = { ...mockProperties[0], name: 'Casa Actualizada' };
       getState().setOne(updatedProperty);
-      
+
       expect(getState().properties).toHaveLength(2);
-      // Verificar que ambas propiedades están presentes
       const propertyNames = getState().properties.map(p => p.name);
       expect(propertyNames).toContain('Casa Actualizada');
       expect(propertyNames).toContain('Apartamento Moderno');
@@ -144,9 +135,9 @@ describe('propertyStore', () => {
   describe('setFilters', () => {
     it('debería actualizar filtros parcialmente', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setFilters({ name: 'Casa' });
-      
+
       expect(getState().filters.name).toBe('Casa');
       expect(getState().filters.address).toBe('');
       expect(getState().filters.minPrice).toBe('');
@@ -156,7 +147,7 @@ describe('propertyStore', () => {
 
     it('debería actualizar múltiples filtros', () => {
       const { getState } = usePropertyStore;
-      
+
       getState().setFilters({
         name: 'Casa',
         address: 'Bogotá',
@@ -164,7 +155,7 @@ describe('propertyStore', () => {
         maxPrice: '200000',
         currentPage: 2
       });
-      
+
       expect(getState().filters).toEqual({
         name: 'Casa',
         address: 'Bogotá',
@@ -176,8 +167,7 @@ describe('propertyStore', () => {
 
     it('debería mantener filtros existentes al actualizar parcialmente', () => {
       const { getState } = usePropertyStore;
-      
-      // Establecer filtros iniciales
+
       getState().setFilters({
         name: 'Casa',
         address: 'Bogotá',
@@ -185,10 +175,9 @@ describe('propertyStore', () => {
         maxPrice: '200000',
         currentPage: 1
       });
-      
-      // Actualizar solo algunos filtros
+
       getState().setFilters({ name: 'Apartamento', currentPage: 3 });
-      
+
       expect(getState().filters).toEqual({
         name: 'Apartamento',
         address: 'Bogotá',
@@ -202,7 +191,7 @@ describe('propertyStore', () => {
   describe('estado inicial', () => {
     it('debería tener estado inicial correcto', () => {
       const { getState } = usePropertyStore;
-      
+
       expect(getState().properties).toEqual([]);
       expect(getState().filters).toEqual({
         name: '',
@@ -217,10 +206,8 @@ describe('propertyStore', () => {
 
   describe('persistencia', () => {
     it('debería configurar persistencia correctamente', () => {
-      // Verificar que el store se crea con persistencia
       const store = usePropertyStore.getState();
-      
-      // El store debería tener las funciones esperadas
+
       expect(typeof store.setMany).toBe('function');
       expect(typeof store.getOne).toBe('function');
       expect(typeof store.setOne).toBe('function');

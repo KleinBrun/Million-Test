@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest",
+    "test": "node ./test/run-vitest.js",
     "test:watch": "vitest --watch",
     "test:ui": "vitest --ui",
     "test:working": "vitest --run services/__tests__/propertyService.simple.test.ts stores/__tests__/propertyStore.simple.test.ts services/__tests__/propertyService.test.ts stores/__tests__/propertyStore.test.ts"
@@ -32,6 +32,7 @@
     "@types/react-dom": "^19",
     "@vitest/ui": "^3.2.4",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.6",
     "happy-dom": "^20.0.7",

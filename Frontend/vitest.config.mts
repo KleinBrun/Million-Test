@@ -1,4 +1,3 @@
-// vitest.config.mts
 import { defineConfig } from 'vitest/config';
 import { fileURLToPath } from 'url';
 import { resolve } from 'path';
