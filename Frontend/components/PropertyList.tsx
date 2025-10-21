@@ -1,5 +1,6 @@
 import { PropertyListProps } from '@/types';
 import PropertyCard from './PropertyCard';
+import React from 'react';
 
 export default function PropertyList({ properties }: PropertyListProps) {
     return (

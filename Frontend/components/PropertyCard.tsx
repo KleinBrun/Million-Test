@@ -29,7 +29,6 @@ export default function PropertyCard({ property }: CardProps) {
             tabIndex={0}
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && goDetail()}
         >
-            {/* Link solo para prefetch del href */}
             <Link href={`/property/${property.idProperty}`} prefetch className="block">
                 <motion.img
                     src={imageUrl}

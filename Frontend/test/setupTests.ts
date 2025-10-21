@@ -1,27 +1,13 @@
-import { vi, afterEach } from 'vitest';
-import 'whatwg-fetch';
+import '@testing-library/jest-dom'; 
+try {
+  const vm: any = require('vm');
 
-vi.stubGlobal('fetch', vi.fn());
-
-vi.stubEnv('NEXT_PUBLIC_API_BASE_URL', 'http://localhost:5228/api/Property');
-
-afterEach(() => {
-  (fetch as unknown as { mockReset: () => void }).mockReset?.();
-});
-
-vi.stubGlobal('localStorage', {
-  getItem: vi.fn(),
-  setItem: vi.fn(),
-  removeItem: vi.fn(),
-  clear: vi.fn(),
-});
-
-Object.defineProperty(window, 'location', {
-  value: { href: 'http://localhost:3000', reload: vi.fn() },
-  writable: true,
-});
-
-vi.stubGlobal('navigator', {
-  share: vi.fn(),
-  clipboard: { writeText: vi.fn() },
-});
+  if (!vm.constants || typeof vm.constants === 'object' && Object.keys(vm.constants).length === 0) {
+    vm.constants = {
+      ...vm.constants,
+      DONT_CONTEXTIFY: 1,
+    };
+  }
+} catch (e) {
+  console.warn('[setupTests] No se pudo polyfillear vm.constants:', e);
+}
